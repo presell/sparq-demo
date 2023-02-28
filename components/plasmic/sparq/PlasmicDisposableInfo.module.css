@@ -11,8 +11,9 @@
 }
 ._1440Px {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 7115px;
+  min-width: 0;
   flex-shrink: 0;
   display: none;
 }
@@ -4232,12 +4233,13 @@
 }
 .li21 {
   background: url("/plasmic/sparq/images/li.png") 0px 10px / 15px 11px no-repeat;
-  width: 384px;
+  width: 100%;
   height: 30px;
   display: block;
   position: absolute;
   top: 110px;
   left: 15px;
+  min-width: 0;
 }
 ._0NicLabTestedVitaminsRecyclable2 {
   position: absolute;
@@ -4257,6 +4259,8 @@
   letter-spacing: 0em;
   line-height: 30px;
   color: rgba(63, 58, 41, 1);
+  width: 100%;
+  min-width: 0;
 }
 .ladybaguette2020Img3156Edit2Jpg {
   background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 414px 621px no-repeat;
@@ -4421,7 +4425,7 @@
 }
 @media (min-width: 414px) {
   .img__wiHyt {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogopng3 {
