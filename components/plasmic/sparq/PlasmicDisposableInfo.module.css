@@ -4143,6 +4143,8 @@
   top: 25px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2 {
   background: url("/plasmic/sparq/images/sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png.png") 0px 0px / 130px 23px no-repeat;
@@ -4295,12 +4297,13 @@
 .ladybaguette2020Img3156Edit2Jpg {
   background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 414px 621px no-repeat;
   transform: translate(0px, -0.031999999999982265px);
-  width: 414px;
+  width: 100%;
   height: 621px;
   display: block;
   position: absolute;
   top: 286px;
   left: 0px;
+  min-width: 0;
 }
 .vitaminAirIsJamPackedWithNaturalVitaminsAminoAcidsAndHealingHerbsToHelpYouQuitNicForGood2 {
   position: absolute;

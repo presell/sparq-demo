@@ -2555,6 +2555,12 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       displayMinWidth={"0" as const}
                       displayWidth={"786px" as const}
                       loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sparq/images/copyOfDispGifIIgif.gif",
+                        fullWidth: 786,
+                        fullHeight: 421,
+                        aspectRatio: undefined
+                      }}
                     />
                   </div>
                 </div>
