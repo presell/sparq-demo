@@ -1023,6 +1023,16 @@
           "id": "_6Y3ctyC1b",
           "name": "hand.svg 22",
           "filePath": "../public/plasmic/sparq/images/handsvg22.bin"
+        },
+        {
+          "id": "WR8PqpS4h",
+          "name": "disp gif.gif",
+          "filePath": "../public/plasmic/sparq/images/dispGifgif.gif"
+        },
+        {
+          "id": "H_GBqEfc0",
+          "name": "disp gif I.gif",
+          "filePath": "../public/plasmic/sparq/images/dispGifIgif.gif"
         }
       ],
       "indirect": false,

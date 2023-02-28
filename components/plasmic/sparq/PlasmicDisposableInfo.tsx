@@ -809,7 +809,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   p11?: p.Flex<"div">;
   starpng14?: p.Flex<"div">;
   _485BasedOn1000Reviews14?: p.Flex<"div">;
-  a10?: p.Flex<"div">;
+  a10?: p.Flex<"a"> & Partial<LinkProps>;
   getYoursNow10?: p.Flex<"div">;
   handsvg10?: p.Flex<"div">;
   paymentlogo40976E39C5C646C8Be427D059A418536Png5?: p.Flex<"div">;
@@ -2544,7 +2544,19 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       projectcss.all,
                       sty.sparqBoxAnimationLoopShorterVersiongif
                     )}
-                  />
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__wwFob)}
+                      displayHeight={"421px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"786px" as const}
+                      loading={"lazy" as const}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -5463,7 +5475,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                               sty.text__eogzh
                             )}
                           >
-                            {"GET YOURS NOW"}
+                            {"GET YOURS NOW 👉"}
                           </div>
                         </div>
 
@@ -6174,7 +6186,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text___9DRtz
                           )}
                         >
-                          {"GET YOURS NOW"}
+                          {"GET YOURS NOW 👉"}
                         </div>
                       </div>
 
@@ -6986,7 +6998,18 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text__nXiid
                           )}
                         >
-                          {"4.8/5 based on 1000+ Reviews"}
+                          <React.Fragment>
+                            <React.Fragment>{"4.8/5 based on "}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"1000+"}
+                            </span>
+                            <React.Fragment>{" Reviews"}</React.Fragment>
+                          </React.Fragment>
                         </div>
                       </div>
                     </div>
@@ -7015,7 +7038,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text__qe8Kl
                           )}
                         >
-                          {"GET YOURS NOW"}
+                          {"GET YOURS NOW 👉"}
                         </div>
                       </div>
 
@@ -7485,7 +7508,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           sty.text___1EdAy
                         )}
                       >
-                        {"GET YOURS NOW"}
+                        {"GET YOURS NOW 👉"}
                       </div>
                     </div>
 
@@ -11293,7 +11316,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           {"Replace Nic "}
                         </span>
                         <React.Fragment>
-                          {"With  Life-enhancing Vitamins."}
+                          {"With Life-enhancing Vitamins."}
                         </React.Fragment>
                       </React.Fragment>
                     </div>
@@ -11341,7 +11364,25 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       projectcss.all,
                       sty.sparqBoxAnimationLoopShorterVersiongif3
                     )}
-                  />
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___2AsM)}
+                      displayHeight={"158px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"100%" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sparq/images/dispGifIgif.gif",
+                        fullWidth: 320,
+                        fullHeight: 158,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
 
                   <div
                     data-plasmic-name={
@@ -11406,10 +11447,17 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       </div>
                     </div>
 
-                    <div
+                    <p.PlasmicLink
                       data-plasmic-name={"a10"}
                       data-plasmic-override={overrides.a10}
-                      className={classNames(projectcss.all, sty.a10)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.a10
+                      )}
+                      component={Link}
+                      href={"#offer" as const}
+                      platform={"nextjs"}
                     >
                       <div
                         data-plasmic-name={"getYoursNow10"}
@@ -11459,7 +11507,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           />
                         ) : null}
                       </div>
-                    </div>
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={
@@ -24208,7 +24256,7 @@ type NodeDefaultElementType = {
   p11: "div";
   starpng14: "div";
   _485BasedOn1000Reviews14: "div";
-  a10: "div";
+  a10: "a";
   getYoursNow10: "div";
   handsvg10: "div";
   paymentlogo40976E39C5C646C8Be427D059A418536Png5: "div";
