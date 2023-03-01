@@ -2138,7 +2138,7 @@
 .getYoursNow3 {
   position: absolute;
   top: 16px;
-  left: 59px;
+  left: 65px;
   width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
@@ -2910,7 +2910,7 @@
 .getYoursNow4 {
   position: absolute;
   top: 16px;
-  left: 59px;
+  left: 65px;
   width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
@@ -4044,7 +4044,7 @@
   }
 }
 .div91 {
-  background: rgba(255, 205, 87, 1);
+  background: #ffcd57;
   width: 100%;
   height: 97px;
   display: block;
@@ -4308,7 +4308,7 @@
   min-width: 0;
 }
 .ladybaguette2020Img3156Edit2Jpg {
-  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 414px 621px no-repeat;
+  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / cover no-repeat;
   transform: translate(0px, -0.031999999999982265px);
   width: 100%;
   height: 621px;
@@ -10190,7 +10190,7 @@
   color: rgba(63, 58, 41, 1);
 }
 .ladybaguette2020Img3156Edit2Jpg2 {
-  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 320px 480px no-repeat;
+  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / cover no-repeat;
   transform: translate(0px, -0.031999999999982265px);
   width: 320px;
   height: 480px;
