@@ -3449,13 +3449,14 @@
   color: rgba(98, 98, 98, 1);
 }
 .divgetyourvitamin {
-  background: rgba(243, 243, 237, 1);
-  width: 1440px;
+  background: #f3f3ed;
+  width: 100%;
   height: 840px;
   display: block;
   position: absolute;
   left: 0px;
   top: 6176px;
+  min-width: 0;
 }
 .div63 {
   width: 1400px;
