@@ -572,7 +572,9 @@ function PlasmicArticleBody__RenderFunc(props: {
                       sty.text___5Of3I
                     )}
                   >
-                    {"100,000+ Happy Customers! In Stock - Ships Now."}
+                    {hasVariant(globalVariants, "screen", "desktopOnly")
+                      ? "100,000+ Happy Customers! In Stock - Ships Now."
+                      : "100,000+ Happy Customers! In Stock - Ships Now."}
                   </div>
 
                   <p.PlasmicImg

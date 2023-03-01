@@ -9,6 +9,16 @@
   min-width: 0;
   min-height: 0;
 }
+@media (min-width: 320px) {
+  .root {
+    align-items: stretch;
+  }
+}
+@media (min-width: 414px) {
+  .root {
+    align-items: stretch;
+  }
+}
 @media (min-width: 768px) {
   .root {
     justify-content: center;
