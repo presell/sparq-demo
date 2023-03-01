@@ -722,7 +722,7 @@
 }
 .inThreeEasySteps {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 130px;
   width: auto;
   height: 45px;
@@ -989,7 +989,7 @@
 }
 .lifeEnhancingVitamins {
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 500px;
   width: 429px;
   height: 45px;
@@ -1204,7 +1204,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -1251,7 +1251,7 @@
 }
 @media (min-width: 768px) {
   .img__kWgX {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png {
@@ -1317,7 +1317,7 @@
 .organicVegetableGlycerinAndNaturalFlavors {
   position: absolute;
   top: 16px;
-  left: 448px;
+  left: 470px;
   width: 504px;
   height: 18px;
   transform: translate(0.45299999999997453px, 0px);
@@ -2139,7 +2139,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -2186,7 +2186,7 @@
 }
 @media (min-width: 768px) {
   .img__gXza {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png2 {
@@ -2911,7 +2911,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -2958,7 +2958,7 @@
 }
 @media (min-width: 768px) {
   .img__sxOd7 {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogopng2 {
@@ -3458,6 +3458,11 @@
   top: 6176px;
   min-width: 0;
 }
+@media (min-width: 768px) {
+  .divgetyourvitamin {
+    display: block;
+  }
+}
 .div63 {
   width: 1400px;
   height: 1px;
@@ -3953,12 +3958,13 @@
 }
 .div92 {
   background: rgba(63, 58, 41, 1);
-  width: 1440px;
+  width: 100%;
   height: 99px;
   display: block;
   position: absolute;
   left: 0px;
   top: 7016px;
+  min-width: 0;
 }
 .div93 {
   width: 1280px;
@@ -4045,6 +4051,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  padding-bottom: 0px;
   min-width: 0;
 }
 .div94 {
@@ -4054,6 +4061,11 @@
   top: 10px;
   left: 0px;
   right: 0px;
+}
+@media (min-width: 414px) {
+  .div94 {
+    display: block;
+  }
 }
 .label4 {
   background: rgba(63, 58, 41, 1);
@@ -4641,6 +4653,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .inhaleWithConfidence2 {
   position: absolute;
@@ -4714,12 +4728,13 @@
 }
 .confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png2 {
   background: url("/plasmic/sparq/images/confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png.png") 0px 0px / 414px 369px no-repeat;
-  width: 414px;
+  width: 100%;
   height: 369px;
   display: block;
   position: absolute;
   top: 190px;
   left: 0px;
+  min-width: 0;
 }
 .div103 {
   width: 310px;
