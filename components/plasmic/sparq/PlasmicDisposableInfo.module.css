@@ -4301,7 +4301,7 @@
   position: absolute;
   top: 7px;
   left: 27px;
-  width: 273px;
+  width: auto;
   height: 16px;
   display: flex;
   flex-direction: column;
@@ -4310,7 +4310,7 @@
 .text__rkaT {
   display: block;
   font-size: 16px;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 30px;
@@ -12476,7 +12476,7 @@
   position: absolute;
   top: 3px;
   left: 113px;
-  width: 175px;
+  width: auto;
   height: 15px;
   transform: translate(0.06199999999999761px, 0px);
   display: flex;
@@ -12485,7 +12485,7 @@
 }
 .text__kPq0Z {
   display: block;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 0em;
   line-height: 22px;
