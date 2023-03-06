@@ -87,7 +87,6 @@ function PlasmicArticleBody__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -573,7 +572,9 @@ function PlasmicArticleBody__RenderFunc(props: {
                       sty.text___5Of3I
                     )}
                   >
-                    {"100,000+ Happy Customers! In Stock - Ships Now."}
+                    {hasVariant(globalVariants, "screen", "desktopOnly")
+                      ? "100,000+ Happy Customers! In Stock - Ships Now."
+                      : "100,000+ Happy Customers! In Stock - Ships Now."}
                   </div>
 
                   <p.PlasmicImg

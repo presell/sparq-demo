@@ -319,17 +319,17 @@
 }
 @media (min-width: 768px) {
   .columns__i8Cp > :nth-child(3n + 1) {
-    width: calc((100% - 3 * 0px) * 4 / 12);
+    width: calc((100% - 3 * 0px) * 5 / 12);
   }
 }
 @media (min-width: 768px) {
   .columns__i8Cp > :nth-child(3n + 2) {
-    width: calc((100% - 3 * 0px) * 4 / 12);
+    width: calc((100% - 3 * 0px) * 2 / 12);
   }
 }
 @media (min-width: 768px) {
   .columns__i8Cp > :nth-child(3n + 3) {
-    width: calc((100% - 3 * 0px) * 4 / 12);
+    width: calc((100% - 3 * 0px) * 5 / 12);
   }
 }
 .column__aepe3 {

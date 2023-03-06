@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -1023,6 +1023,21 @@
           "id": "_6Y3ctyC1b",
           "name": "hand.svg 22",
           "filePath": "../public/plasmic/sparq/images/handsvg22.bin"
+        },
+        {
+          "id": "WR8PqpS4h",
+          "name": "disp gif.gif",
+          "filePath": "../public/plasmic/sparq/images/dispGifgif.gif"
+        },
+        {
+          "id": "H_GBqEfc0",
+          "name": "disp gif I.gif",
+          "filePath": "../public/plasmic/sparq/images/dispGifIgif.gif"
+        },
+        {
+          "id": "8VIZHqlGw",
+          "name": "Copy of disp gif II.gif",
+          "filePath": "../public/plasmic/sparq/images/copyOfDispGifIIgif.gif"
         }
       ],
       "indirect": false,

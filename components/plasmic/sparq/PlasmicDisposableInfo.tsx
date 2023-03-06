@@ -809,7 +809,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   p11?: p.Flex<"div">;
   starpng14?: p.Flex<"div">;
   _485BasedOn1000Reviews14?: p.Flex<"div">;
-  a10?: p.Flex<"div">;
+  a10?: p.Flex<"a"> & Partial<LinkProps>;
   getYoursNow10?: p.Flex<"div">;
   handsvg10?: p.Flex<"div">;
   paymentlogo40976E39C5C646C8Be427D059A418536Png5?: p.Flex<"div">;
@@ -1153,7 +1153,6 @@ function PlasmicDisposableInfo__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -2486,7 +2485,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                               sty.text__swmzQ
                             )}
                           >
-                            {"GET YOURS NOW"}
+                            {"GET YOURS NOW 👉"}
                           </div>
                         </div>
 
@@ -2545,7 +2544,25 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       projectcss.all,
                       sty.sparqBoxAnimationLoopShorterVersiongif
                     )}
-                  />
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__wwFob)}
+                      displayHeight={"421px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"786px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sparq/images/copyOfDispGifIIgif.gif",
+                        fullWidth: 786,
+                        fullHeight: 421,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -3321,7 +3338,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text__z3Cym
                           )}
                         >
-                          {"GET YOURS NOW"}
+                          {"GET YOURS NOW 👉"}
                         </div>
                       </div>
 
@@ -3989,7 +4006,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           sty.text__jnnqg
                         )}
                       >
-                        {"GET YOURS NOW"}
+                        {"GET YOURS NOW 👉"}
                       </div>
                     </div>
 
@@ -4500,457 +4517,479 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                   </div>
                 </div>
               ) : null}
-
-              <div
-                data-plasmic-name={"divgetyourvitamin"}
-                data-plasmic-override={overrides.divgetyourvitamin}
-                className={classNames(projectcss.all, sty.divgetyourvitamin)}
-              >
-                {(
-                  hasVariant(globalVariants, "screen", "desktopOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"div63"}
-                    data-plasmic-override={overrides.div63}
-                    className={classNames(projectcss.all, sty.div63)}
-                  >
+              {(
+                hasVariant(globalVariants, "screen", "desktopOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  data-plasmic-name={"divgetyourvitamin"}
+                  data-plasmic-override={overrides.divgetyourvitamin}
+                  className={classNames(projectcss.all, sty.divgetyourvitamin)}
+                >
+                  {(
+                    hasVariant(globalVariants, "screen", "desktopOnly")
+                      ? true
+                      : true
+                  ) ? (
                     <div
-                      data-plasmic-name={"div64"}
-                      data-plasmic-override={overrides.div64}
-                      className={classNames(projectcss.all, sty.div64)}
+                      data-plasmic-name={"div63"}
+                      data-plasmic-override={overrides.div63}
+                      className={classNames(projectcss.all, sty.div63)}
                     >
                       <div
-                        data-plasmic-name={"getYourVitaminAirToday"}
-                        data-plasmic-override={overrides.getYourVitaminAirToday}
-                        className={classNames(
-                          projectcss.all,
-                          sty.getYourVitaminAirToday
-                        )}
+                        data-plasmic-name={"div64"}
+                        data-plasmic-override={overrides.div64}
+                        className={classNames(projectcss.all, sty.div64)}
                       >
                         <div
+                          data-plasmic-name={"getYourVitaminAirToday"}
+                          data-plasmic-override={
+                            overrides.getYourVitaminAirToday
+                          }
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__sYWxw
+                            sty.getYourVitaminAirToday
                           )}
                         >
-                          {"Get Your Vitamin Air Today!"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sYWxw
+                            )}
+                          >
+                            {"Get Your Vitamin Air Today!"}
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={"h55"}
+                          data-plasmic-override={overrides.h55}
+                          className={classNames(projectcss.all, sty.h55)}
+                        >
+                          <div
+                            data-plasmic-name={"starpng6"}
+                            data-plasmic-override={overrides.starpng6}
+                            className={classNames(projectcss.all, sty.starpng6)}
+                          />
+
+                          <div
+                            data-plasmic-name={"_485BasedOn1000Reviews6"}
+                            data-plasmic-override={
+                              overrides._485BasedOn1000Reviews6
+                            }
+                            className={classNames(
+                              projectcss.all,
+                              sty._485BasedOn1000Reviews6
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__xqqEo
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {" 4.8/5 based on "}
+                                </React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontWeight: 700 }}
+                                >
+                                  {"1000+"}
+                                </span>
+                                <React.Fragment>{" Reviews"}</React.Fragment>
+                              </React.Fragment>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={
+                            "_0Nic100FlavorLabTestedVitaminsRecyclable"
+                          }
+                          data-plasmic-override={
+                            overrides._0Nic100FlavorLabTestedVitaminsRecyclable
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            sty._0Nic100FlavorLabTestedVitaminsRecyclable
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___0M0Nx
+                            )}
+                          >
+                            {
+                              "0% Nic / 100% Flavor / Lab-Tested / Vitamins / Recyclable"
+                            }
+                          </div>
                         </div>
                       </div>
 
+                      {(
+                        hasVariant(globalVariants, "screen", "desktopOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          data-plasmic-name={"div65"}
+                          data-plasmic-override={overrides.div65}
+                          className={classNames(projectcss.all, sty.div65)}
+                        />
+                      ) : null}
+                    </div>
+                  ) : null}
+
+                  <div
+                    data-plasmic-name={"divprodarea"}
+                    data-plasmic-override={overrides.divprodarea}
+                    className={classNames(projectcss.all, sty.divprodarea)}
+                    id={"offer" as const}
+                  >
+                    <div
+                      data-plasmic-name={"div71"}
+                      data-plasmic-override={overrides.div71}
+                      className={classNames(projectcss.all, sty.div71)}
+                    >
                       <div
-                        data-plasmic-name={"h55"}
-                        data-plasmic-override={overrides.h55}
-                        className={classNames(projectcss.all, sty.h55)}
+                        data-plasmic-name={"div72"}
+                        data-plasmic-override={overrides.div72}
+                        className={classNames(projectcss.all, sty.div72)}
                       >
                         <div
-                          data-plasmic-name={"starpng6"}
-                          data-plasmic-override={overrides.starpng6}
-                          className={classNames(projectcss.all, sty.starpng6)}
+                          data-plasmic-name={"prodimagepng"}
+                          data-plasmic-override={overrides.prodimagepng}
+                          className={classNames(
+                            projectcss.all,
+                            sty.prodimagepng
+                          )}
                         />
 
                         <div
-                          data-plasmic-name={"_485BasedOn1000Reviews6"}
-                          data-plasmic-override={
-                            overrides._485BasedOn1000Reviews6
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            sty._485BasedOn1000Reviews6
-                          )}
+                          data-plasmic-name={"div73"}
+                          data-plasmic-override={overrides.div73}
+                          className={classNames(projectcss.all, sty.div73)}
                         >
                           <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__xqqEo
-                            )}
-                          >
-                            <React.Fragment>
-                              <React.Fragment>
-                                {" 4.8/5 based on "}
-                              </React.Fragment>
-                              <span
-                                className={
-                                  "plasmic_default__all plasmic_default__span"
-                                }
-                                style={{ fontWeight: 700 }}
-                              >
-                                {"1000+"}
-                              </span>
-                              <React.Fragment>{" Reviews"}</React.Fragment>
-                            </React.Fragment>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={
-                          "_0Nic100FlavorLabTestedVitaminsRecyclable"
-                        }
-                        data-plasmic-override={
-                          overrides._0Nic100FlavorLabTestedVitaminsRecyclable
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          sty._0Nic100FlavorLabTestedVitaminsRecyclable
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___0M0Nx
-                          )}
-                        >
-                          {
-                            "0% Nic / 100% Flavor / Lab-Tested / Vitamins / Recyclable"
-                          }
-                        </div>
-                      </div>
-                    </div>
-
-                    {(
-                      hasVariant(globalVariants, "screen", "desktopOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        data-plasmic-name={"div65"}
-                        data-plasmic-override={overrides.div65}
-                        className={classNames(projectcss.all, sty.div65)}
-                      />
-                    ) : null}
-                  </div>
-                ) : null}
-
-                <div
-                  data-plasmic-name={"divprodarea"}
-                  data-plasmic-override={overrides.divprodarea}
-                  className={classNames(projectcss.all, sty.divprodarea)}
-                  id={"offer" as const}
-                >
-                  <div
-                    data-plasmic-name={"div71"}
-                    data-plasmic-override={overrides.div71}
-                    className={classNames(projectcss.all, sty.div71)}
-                  >
-                    <div
-                      data-plasmic-name={"div72"}
-                      data-plasmic-override={overrides.div72}
-                      className={classNames(projectcss.all, sty.div72)}
-                    >
-                      <div
-                        data-plasmic-name={"prodimagepng"}
-                        data-plasmic-override={overrides.prodimagepng}
-                        className={classNames(projectcss.all, sty.prodimagepng)}
-                      />
-
-                      <div
-                        data-plasmic-name={"div73"}
-                        data-plasmic-override={overrides.div73}
-                        className={classNames(projectcss.all, sty.div73)}
-                      >
-                        <div
-                          data-plasmic-name={"buy2Get1"}
-                          data-plasmic-override={overrides.buy2Get1}
-                          className={classNames(projectcss.all, sty.buy2Get1)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__y9EZb
-                            )}
-                          >
-                            {"BUY 2, Get 1"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"free"}
-                          data-plasmic-override={overrides.free}
-                          className={classNames(projectcss.all, sty.free)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__eOrt7
-                            )}
-                          >
-                            {"Free"}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"div74"}
-                      data-plasmic-override={overrides.div74}
-                      className={classNames(projectcss.all, sty.div74)}
-                    >
-                      <div
-                        data-plasmic-name={"specialOffer"}
-                        data-plasmic-override={overrides.specialOffer}
-                        className={classNames(projectcss.all, sty.specialOffer)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__sWIbv
-                          )}
-                        >
-                          {"special offer"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"freeVitaminAir"}
-                        data-plasmic-override={overrides.freeVitaminAir}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeVitaminAir
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gC2Tp
-                          )}
-                        >
-                          {"free vitamin air"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={
-                          "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack"
-                        }
-                        data-plasmic-override={
-                          overrides.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          sty.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dJona
-                          )}
-                        >
-                          {
-                            "Money-Back Guarantee: Better Flavor & Harder Hits or Your Money Back."
-                          }
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"div75"}
-                        data-plasmic-override={overrides.div75}
-                        className={classNames(projectcss.all, sty.div75)}
-                      >
-                        <div
-                          data-plasmic-name={"chooseFlavor"}
-                          data-plasmic-override={overrides.chooseFlavor}
-                          className={classNames(
-                            projectcss.all,
-                            sty.chooseFlavor
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__kMoZe
-                            )}
-                          >
-                            {"Choose Flavor"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"div76"}
-                          data-plasmic-override={overrides.div76}
-                          className={classNames(projectcss.all, sty.div76)}
-                        >
-                          <p.PlasmicLink
-                            data-plasmic-name={"div77"}
-                            data-plasmic-override={overrides.div77}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div77
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788108:1,39394868748:1,39394817036:1?note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
+                            data-plasmic-name={"buy2Get1"}
+                            data-plasmic-override={overrides.buy2Get1}
+                            className={classNames(projectcss.all, sty.buy2Get1)}
                           >
                             <div
-                              data-plasmic-name={"div78"}
-                              data-plasmic-override={overrides.div78}
-                              className={classNames(projectcss.all, sty.div78)}
-                            >
-                              {(
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "desktopOnly"
-                                )
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  data-plasmic-name={"div79"}
-                                  data-plasmic-override={overrides.div79}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.div79
-                                  )}
-                                />
-                              ) : null}
-                            </div>
-
-                            <div
-                              data-plasmic-name={"strawberry"}
-                              data-plasmic-override={overrides.strawberry}
                               className={classNames(
                                 projectcss.all,
-                                sty.strawberry
+                                projectcss.__wab_text,
+                                sty.text__y9EZb
+                              )}
+                            >
+                              {"BUY 2, Get 1"}
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"free"}
+                            data-plasmic-override={overrides.free}
+                            className={classNames(projectcss.all, sty.free)}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__eOrt7
+                              )}
+                            >
+                              {"Free"}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"div74"}
+                        data-plasmic-override={overrides.div74}
+                        className={classNames(projectcss.all, sty.div74)}
+                      >
+                        <div
+                          data-plasmic-name={"specialOffer"}
+                          data-plasmic-override={overrides.specialOffer}
+                          className={classNames(
+                            projectcss.all,
+                            sty.specialOffer
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sWIbv
+                            )}
+                          >
+                            {"special offer"}
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={"freeVitaminAir"}
+                          data-plasmic-override={overrides.freeVitaminAir}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeVitaminAir
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__gC2Tp
+                            )}
+                          >
+                            {"free vitamin air"}
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={
+                            "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack"
+                          }
+                          data-plasmic-override={
+                            overrides.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            sty.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__dJona
+                            )}
+                          >
+                            {
+                              "Money-Back Guarantee: Better Flavor & Harder Hits or Your Money Back."
+                            }
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={"div75"}
+                          data-plasmic-override={overrides.div75}
+                          className={classNames(projectcss.all, sty.div75)}
+                        >
+                          <div
+                            data-plasmic-name={"chooseFlavor"}
+                            data-plasmic-override={overrides.chooseFlavor}
+                            className={classNames(
+                              projectcss.all,
+                              sty.chooseFlavor
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__kMoZe
+                              )}
+                            >
+                              {"Choose Flavor"}
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"div76"}
+                            data-plasmic-override={overrides.div76}
+                            className={classNames(projectcss.all, sty.div76)}
+                          >
+                            <p.PlasmicLink
+                              data-plasmic-name={"div77"}
+                              data-plasmic-override={overrides.div77}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                sty.div77
+                              )}
+                              component={Link}
+                              href={
+                                "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788108:1,39394868748:1,39394817036:1?note=LHP-cw-offer-widget" as const
+                              }
+                              platform={"nextjs"}
+                            >
+                              <div
+                                data-plasmic-name={"div78"}
+                                data-plasmic-override={overrides.div78}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.div78
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "desktopOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    data-plasmic-name={"div79"}
+                                    data-plasmic-override={overrides.div79}
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.div79
+                                    )}
+                                  />
+                                ) : null}
+                              </div>
+
+                              <div
+                                data-plasmic-name={"strawberry"}
+                                data-plasmic-override={overrides.strawberry}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.strawberry
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___7Cd7
+                                  )}
+                                >
+                                  {"Strawberry"}
+                                </div>
+                              </div>
+                            </p.PlasmicLink>
+
+                            <p.PlasmicLink
+                              data-plasmic-name={"div80"}
+                              data-plasmic-override={overrides.div80}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                sty.div80
+                              )}
+                              component={Link}
+                              href={
+                                "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788236:1,39394868940:1,39394817164:1?discount=FREE&note=LHP-cw-offer-widget" as const
+                              }
+                              platform={"nextjs"}
+                            >
+                              <div
+                                data-plasmic-name={"div81"}
+                                data-plasmic-override={overrides.div81}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.div81
+                                )}
+                              >
+                                <div
+                                  data-plasmic-name={"div82"}
+                                  data-plasmic-override={overrides.div82}
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.div82
+                                  )}
+                                />
+                              </div>
+
+                              <div
+                                data-plasmic-name={"vanila"}
+                                data-plasmic-override={overrides.vanila}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.vanila
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__buNy
+                                  )}
+                                >
+                                  {"Vanilla"}
+                                </div>
+                              </div>
+                            </p.PlasmicLink>
+                          </div>
+                        </div>
+
+                        <div
+                          data-plasmic-name={"div83"}
+                          data-plasmic-override={overrides.div83}
+                          className={classNames(projectcss.all, sty.div83)}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "desktopOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              data-plasmic-name={"adifferance"}
+                              data-plasmic-override={overrides.adifferance}
+                              className={classNames(
+                                projectcss.all,
+                                sty.adifferance
                               )}
                             >
                               <div
+                                data-plasmic-name={"feelTheDifference"}
+                                data-plasmic-override={
+                                  overrides.feelTheDifference
+                                }
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___7Cd7
+                                  sty.feelTheDifference
                                 )}
                               >
-                                {"Strawberry"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__tWwhe
+                                  )}
+                                >
+                                  {"FEEL THE DIFFERENCE"}
+                                </div>
                               </div>
-                            </div>
-                          </p.PlasmicLink>
 
-                          <p.PlasmicLink
-                            data-plasmic-name={"div80"}
-                            data-plasmic-override={overrides.div80}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div80
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788236:1,39394868940:1,39394817164:1?discount=FREE&note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"div81"}
-                              data-plasmic-override={overrides.div81}
-                              className={classNames(projectcss.all, sty.div81)}
-                            >
                               <div
-                                data-plasmic-name={"div82"}
-                                data-plasmic-override={overrides.div82}
+                                data-plasmic-name={"fingericonpng"}
+                                data-plasmic-override={overrides.fingericonpng}
                                 className={classNames(
                                   projectcss.all,
-                                  sty.div82
+                                  sty.fingericonpng
                                 )}
                               />
                             </div>
+                          ) : null}
 
-                            <div
-                              data-plasmic-name={"vanila"}
-                              data-plasmic-override={overrides.vanila}
-                              className={classNames(projectcss.all, sty.vanila)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__buNy
-                                )}
-                              >
-                                {"Vanilla"}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"div83"}
-                        data-plasmic-override={overrides.div83}
-                        className={classNames(projectcss.all, sty.div83)}
-                      >
-                        {(
-                          hasVariant(globalVariants, "screen", "desktopOnly")
-                            ? true
-                            : true
-                        ) ? (
                           <div
-                            data-plasmic-name={"adifferance"}
-                            data-plasmic-override={overrides.adifferance}
+                            data-plasmic-name={"paymentcardpng"}
+                            data-plasmic-override={overrides.paymentcardpng}
                             className={classNames(
                               projectcss.all,
-                              sty.adifferance
+                              sty.paymentcardpng
                             )}
-                          >
-                            <div
-                              data-plasmic-name={"feelTheDifference"}
-                              data-plasmic-override={
-                                overrides.feelTheDifference
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.feelTheDifference
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__tWwhe
-                                )}
-                              >
-                                {"FEEL THE DIFFERENCE"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={"fingericonpng"}
-                              data-plasmic-override={overrides.fingericonpng}
-                              className={classNames(
-                                projectcss.all,
-                                sty.fingericonpng
-                              )}
-                            />
-                          </div>
-                        ) : null}
-
-                        <div
-                          data-plasmic-name={"paymentcardpng"}
-                          data-plasmic-override={overrides.paymentcardpng}
-                          className={classNames(
-                            projectcss.all,
-                            sty.paymentcardpng
-                          )}
-                        />
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              ) : null}
 
               <div
                 data-plasmic-name={"div92"}
@@ -5037,93 +5076,99 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                 data-plasmic-override={overrides.div91}
                 className={classNames(projectcss.all, sty.div91)}
               >
-                <div
-                  data-plasmic-name={"div94"}
-                  data-plasmic-override={overrides.div94}
-                  className={classNames(projectcss.all, sty.div94)}
-                >
-                  <p.PlasmicLink
-                    data-plasmic-name={"label4"}
-                    data-plasmic-override={overrides.label4}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.label4
-                    )}
-                    component={Link}
-                    href={"#offer" as const}
-                    platform={"nextjs"}
+                {(
+                  hasVariant(globalVariants, "screen", "largestMobile")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"div94"}
+                    data-plasmic-override={overrides.div94}
+                    className={classNames(projectcss.all, sty.div94)}
                   >
-                    <div
+                    <p.PlasmicLink
+                      data-plasmic-name={"label4"}
+                      data-plasmic-override={overrides.label4}
                       className={classNames(
                         projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__khP8E
+                        projectcss.a,
+                        sty.label4
                       )}
+                      component={Link}
+                      href={"#offer" as const}
+                      platform={"nextjs"}
                     >
-                      {"CLAIM FREE DEVICE"}
-                    </div>
-                  </p.PlasmicLink>
-
-                  <div
-                    data-plasmic-name={
-                      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2"
-                    }
-                    data-plasmic-override={
-                      overrides.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      sty.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__w9Qx2
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"SPECIAL OFFER:"}
-                        </span>
-                        <React.Fragment>
-                          {
-                            " Claim this one-time offer. Try Vitamin Air at a fraction of the regular price today."
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  </div>
-
-                  <div
-                    data-plasmic-name={"freeShipping4"}
-                    data-plasmic-override={overrides.freeShipping4}
-                    className={classNames(projectcss.all, sty.freeShipping4)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "largestMobile")
-                        ? true
-                        : true
-                    ) ? (
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__hGajI
+                          sty.text__khP8E
                         )}
                       >
-                        {"+ Free Shipping"}
+                        {"CLAIM FREE DEVICE"}
                       </div>
-                    ) : null}
+                    </p.PlasmicLink>
+
+                    <div
+                      data-plasmic-name={
+                        "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2"
+                      }
+                      data-plasmic-override={
+                        overrides.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
+                      }
+                      className={classNames(
+                        projectcss.all,
+                        sty.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__w9Qx2
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"SPECIAL OFFER:"}
+                          </span>
+                          <React.Fragment>
+                            {
+                              " Claim this one-time offer. Try Vitamin Air at a fraction of the regular price today."
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"freeShipping4"}
+                      data-plasmic-override={overrides.freeShipping4}
+                      className={classNames(projectcss.all, sty.freeShipping4)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "largestMobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hGajI
+                          )}
+                        >
+                          {"+ Free Shipping"}
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
 
               <div
@@ -5464,7 +5509,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                               sty.text__eogzh
                             )}
                           >
-                            {"GET YOURS NOW"}
+                            {"GET YOURS NOW 👉"}
                           </div>
                         </div>
 
@@ -6175,7 +6220,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text___9DRtz
                           )}
                         >
-                          {"GET YOURS NOW"}
+                          {"GET YOURS NOW 👉"}
                         </div>
                       </div>
 
@@ -6987,7 +7032,18 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text__nXiid
                           )}
                         >
-                          {"4.8/5 based on 1000+ Reviews"}
+                          <React.Fragment>
+                            <React.Fragment>{"4.8/5 based on "}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"1000+"}
+                            </span>
+                            <React.Fragment>{" Reviews"}</React.Fragment>
+                          </React.Fragment>
                         </div>
                       </div>
                     </div>
@@ -7016,7 +7072,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                             sty.text__qe8Kl
                           )}
                         >
-                          {"GET YOURS NOW"}
+                          {"GET YOURS NOW 👉"}
                         </div>
                       </div>
 
@@ -7486,7 +7542,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           sty.text___1EdAy
                         )}
                       >
-                        {"GET YOURS NOW"}
+                        {"GET YOURS NOW 👉"}
                       </div>
                     </div>
 
@@ -11294,7 +11350,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           {"Replace Nic "}
                         </span>
                         <React.Fragment>
-                          {"With  Life-enhancing Vitamins."}
+                          {"With Life-enhancing Vitamins."}
                         </React.Fragment>
                       </React.Fragment>
                     </div>
@@ -11342,7 +11398,25 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       projectcss.all,
                       sty.sparqBoxAnimationLoopShorterVersiongif3
                     )}
-                  />
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___2AsM)}
+                      displayHeight={"158px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"100%" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sparq/images/dispGifIgif.gif",
+                        fullWidth: 320,
+                        fullHeight: 158,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
 
                   <div
                     data-plasmic-name={
@@ -11407,10 +11481,17 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                       </div>
                     </div>
 
-                    <div
+                    <p.PlasmicLink
                       data-plasmic-name={"a10"}
                       data-plasmic-override={overrides.a10}
-                      className={classNames(projectcss.all, sty.a10)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.a10
+                      )}
+                      component={Link}
+                      href={"#offer" as const}
+                      platform={"nextjs"}
                     >
                       <div
                         data-plasmic-name={"getYoursNow10"}
@@ -11460,7 +11541,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                           />
                         ) : null}
                       </div>
-                    </div>
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={
@@ -24209,7 +24290,7 @@ type NodeDefaultElementType = {
   p11: "div";
   starpng14: "div";
   _485BasedOn1000Reviews14: "div";
-  a10: "div";
+  a10: "a";
   getYoursNow10: "div";
   handsvg10: "div";
   paymentlogo40976E39C5C646C8Be427D059A418536Png5: "div";

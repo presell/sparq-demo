@@ -9,10 +9,27 @@
   min-width: 0;
   min-height: 0;
 }
+@media (min-width: 320px) {
+  .root {
+    align-items: stretch;
+  }
+}
+@media (min-width: 414px) {
+  .root {
+    align-items: stretch;
+  }
+}
+@media (min-width: 768px) {
+  .root {
+    justify-content: center;
+    align-items: center;
+  }
+}
 ._1440Px {
   position: relative;
-  width: 1440px;
   height: 7115px;
+  width: 100%;
+  min-width: 0;
   flex-shrink: 0;
   display: none;
 }
@@ -23,12 +40,13 @@
 }
 .div {
   background: rgba(255, 205, 87, 1);
-  width: 1440px;
+  width: 100%;
   height: 60px;
   display: block;
   position: absolute;
   left: 0px;
   top: 0px;
+  min-width: 0;
 }
 .div2 {
   height: 60px;
@@ -114,13 +132,14 @@
   }
 }
 .div3 {
-  background: url("/plasmic/sparq/images/div.png") 0px 0px / 1440px 723px no-repeat;
-  width: 1440px;
+  background: url("/plasmic/sparq/images/div.png") 0px 0px / cover no-repeat;
+  width: 100%;
   height: 724px;
   display: block;
   position: absolute;
   left: 0px;
   top: 60px;
+  min-width: 0;
 }
 .div4 {
   height: 604px;
@@ -634,12 +653,13 @@
       rgba(237, 237, 227, 1) 199%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 1440px;
+  width: 100%;
   height: 642px;
   display: block;
   position: absolute;
   left: 0px;
   top: 884px;
+  min-width: 0;
 }
 .confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png {
   background: url("/plasmic/sparq/images/confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png.png") 0px 0px / 720px 642px no-repeat;
@@ -712,7 +732,7 @@
 }
 .inThreeEasySteps {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 130px;
   width: auto;
   height: 45px;
@@ -912,12 +932,13 @@
   color: rgba(102, 102, 102, 1);
 }
 .div18 {
-  width: 1400px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 20px;
   top: 1596px;
+  min-width: 0;
 }
 .div19 {
   height: 150px;
@@ -978,7 +999,7 @@
 }
 .lifeEnhancingVitamins {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 500px;
   width: 429px;
   height: 45px;
@@ -1044,7 +1065,7 @@
 }
 .traditionallyFoundInSupplementsThatElevateMentalAndPhysicalEndurance {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 95px;
   width: auto;
   height: 55px;
@@ -1193,7 +1214,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -1240,7 +1261,7 @@
 }
 @media (min-width: 768px) {
   .img__kWgX {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png {
@@ -1254,7 +1275,7 @@
   left: 212px;
 }
 .sparqBoxAnimationLoopShorterVersiongif {
-  background: url("/plasmic/sparq/images/sparqBoxAnimationLoopShorterVersiongif.png") 0px 0px / 746px 420px no-repeat;
+  background: none;
   height: 421px;
   display: block;
   position: absolute;
@@ -1262,14 +1283,30 @@
   left: 654px;
   right: 0px;
 }
+.img__wwFob {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  width: 786px;
+  height: 421px;
+}
+.img__wwFob > picture > img {
+  object-fit: cover;
+}
+.img__wwFob > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
 .div23 {
   background: rgba(250, 250, 248, 1);
-  width: 1440px;
+  width: 100%;
   height: 780px;
   display: block;
   position: absolute;
   left: 0px;
   top: 2276px;
+  min-width: 0;
 }
 .div24 {
   width: 1400px;
@@ -1290,7 +1327,7 @@
 .organicVegetableGlycerinAndNaturalFlavors {
   position: absolute;
   top: 16px;
-  left: 448px;
+  left: 470px;
   width: 504px;
   height: 18px;
   transform: translate(0.45299999999997453px, 0px);
@@ -1776,12 +1813,13 @@
       rgba(237, 237, 227, 1) 199%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 1440px;
+  width: 100%;
   height: 757px;
   display: block;
   position: absolute;
   left: 0px;
   top: 3056px;
+  min-width: 0;
 }
 .promissory700Cba5Ab8264B5C8106987450146E3Bpng {
   background: url("/plasmic/sparq/images/promissory700Cba5AB8264B5C8106987450146E3Bpng.jpeg") 0px 0px / 720px 756px no-repeat;
@@ -2110,8 +2148,8 @@
 .getYoursNow3 {
   position: absolute;
   top: 16px;
-  left: 59px;
-  width: 128px;
+  left: 65px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -2158,7 +2196,7 @@
 }
 @media (min-width: 768px) {
   .img__gXza {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png2 {
@@ -2882,8 +2920,8 @@
 .getYoursNow4 {
   position: absolute;
   top: 16px;
-  left: 59px;
-  width: 128px;
+  left: 65px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -2930,7 +2968,7 @@
 }
 @media (min-width: 768px) {
   .img__sxOd7 {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogopng2 {
@@ -3421,13 +3459,19 @@
   color: rgba(98, 98, 98, 1);
 }
 .divgetyourvitamin {
-  background: rgba(243, 243, 237, 1);
-  width: 1440px;
+  background: #f3f3ed;
+  width: 100%;
   height: 840px;
   display: block;
   position: absolute;
   left: 0px;
   top: 6176px;
+  min-width: 0;
+}
+@media (min-width: 768px) {
+  .divgetyourvitamin {
+    display: block;
+  }
 }
 .div63 {
   width: 1400px;
@@ -3550,7 +3594,7 @@
   left: 348px;
   top: 254.00146484375px;
   background: #ffffff;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 .div71 {
   width: 679px;
@@ -3924,12 +3968,13 @@
 }
 .div92 {
   background: rgba(63, 58, 41, 1);
-  width: 1440px;
+  width: 100%;
   height: 99px;
   display: block;
   position: absolute;
   left: 0px;
   top: 7016px;
+  min-width: 0;
 }
 .div93 {
   width: 1280px;
@@ -3993,8 +4038,10 @@
 }
 ._414Px {
   position: relative;
-  width: 414px;
+  width: 100%;
   height: 8975px;
+  align-self: stretch;
+  min-width: 0;
   flex-shrink: 0;
 }
 @media (min-width: 414px) {
@@ -4008,13 +4055,15 @@
   }
 }
 .div91 {
-  background: rgba(255, 205, 87, 1);
-  width: 414px;
+  background: #ffcd57;
+  width: 100%;
   height: 97px;
   display: block;
   position: absolute;
   left: 0px;
   top: 0px;
+  padding-bottom: 0px;
+  min-width: 0;
 }
 .div94 {
   height: 75px;
@@ -4023,6 +4072,11 @@
   top: 10px;
   left: 0px;
   right: 0px;
+}
+@media (min-width: 414px) {
+  .div94 {
+    display: block;
+  }
 }
 .label4 {
   background: rgba(63, 58, 41, 1);
@@ -4098,12 +4152,13 @@
 .div95 {
   background: url("/plasmic/sparq/images/div.png") 0px 0px / 3022px 1411px no-repeat,
     rgba(238, 238, 238, 1);
-  width: 414px;
+  width: 100%;
   height: 1257px;
   display: block;
   position: absolute;
   left: 0px;
   top: 97px;
+  min-width: 0;
 }
 .div96 {
   height: 1202px;
@@ -4112,6 +4167,8 @@
   top: 25px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2 {
   background: url("/plasmic/sparq/images/sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png.png") 0px 0px / 130px 23px no-repeat;
@@ -4232,18 +4289,19 @@
 }
 .li21 {
   background: url("/plasmic/sparq/images/li.png") 0px 10px / 15px 11px no-repeat;
-  width: 384px;
+  width: 100%;
   height: 30px;
   display: block;
   position: absolute;
   top: 110px;
   left: 15px;
+  min-width: 0;
 }
 ._0NicLabTestedVitaminsRecyclable2 {
   position: absolute;
   top: 7px;
   left: 27px;
-  width: 273px;
+  width: auto;
   height: 16px;
   display: flex;
   flex-direction: column;
@@ -4252,21 +4310,24 @@
 .text__rkaT {
   display: block;
   font-size: 16px;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   line-height: 30px;
   color: rgba(63, 58, 41, 1);
+  width: 100%;
+  min-width: 0;
 }
 .ladybaguette2020Img3156Edit2Jpg {
-  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 414px 621px no-repeat;
+  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / cover no-repeat;
   transform: translate(0px, -0.031999999999982265px);
-  width: 414px;
+  width: 100%;
   height: 621px;
   display: block;
   position: absolute;
   top: 286px;
   left: 0px;
+  min-width: 0;
 }
 .vitaminAirIsJamPackedWithNaturalVitaminsAminoAcidsAndHealingHerbsToHelpYouQuitNicForGood2 {
   position: absolute;
@@ -4373,8 +4434,8 @@
 .getYoursNow5 {
   position: absolute;
   top: 16px;
-  left: 64px;
-  width: 128px;
+  left: 70px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -4390,6 +4451,7 @@
   letter-spacing: 0em;
   line-height: 27px;
   color: rgba(255, 255, 255, 1);
+  padding-right: 0px;
 }
 .handsvg5 {
   transform: translate(0.26499999999998636px, 0.34299999999999997px);
@@ -4421,7 +4483,7 @@
 }
 @media (min-width: 414px) {
   .img__wiHyt {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogopng3 {
@@ -4501,12 +4563,13 @@
   position: relative;
 }
 .ul9 {
-  width: 394px;
+  width: 100%;
   height: 62px;
   display: block;
   position: absolute;
   left: 10px;
   top: 1384px;
+  min-width: 0;
 }
 .asFeaturedIn2 {
   position: absolute;
@@ -4586,12 +4649,13 @@
       rgba(237, 237, 227, 1) 200%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 414px;
+  width: 100%;
   height: 901px;
   display: block;
   position: absolute;
   left: 0px;
   top: 1476px;
+  min-width: 0;
 }
 .div102 {
   height: 901px;
@@ -4600,6 +4664,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .inhaleWithConfidence2 {
   position: absolute;
@@ -4673,12 +4739,13 @@
 }
 .confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png2 {
   background: url("/plasmic/sparq/images/confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png.png") 0px 0px / 414px 369px no-repeat;
-  width: 414px;
+  width: 100%;
   height: 369px;
   display: block;
   position: absolute;
   top: 190px;
   left: 0px;
+  min-width: 0;
 }
 .div103 {
   width: 310px;
@@ -4860,12 +4927,13 @@
   color: rgba(102, 102, 102, 1);
 }
 .div110 {
-  width: 384px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 15px;
   top: 2407px;
+  min-width: 0;
 }
 .div111 {
   height: 117px;
@@ -4900,7 +4968,7 @@
 .replaceNicWithLifeEnhancingVitamins {
   position: absolute;
   top: 50px;
-  left: 20px;
+  left: -30px;
   width: auto;
   height: 75px;
   transform: translate(0.48400000000000176px, 0px);
@@ -5034,8 +5102,8 @@
 .getYoursNow6 {
   position: absolute;
   top: 16px;
-  left: 59px;
-  width: 128px;
+  left: 65px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -5082,7 +5150,7 @@
 }
 @media (min-width: 414px) {
   .img__sGIs {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png3 {
@@ -5097,12 +5165,13 @@
 }
 .div114 {
   background: rgba(250, 250, 248, 1);
-  width: 414px;
+  width: 100%;
   height: 1309px;
   display: block;
   position: absolute;
   left: 0px;
   top: 3308px;
+  min-width: 0;
 }
 .div115 {
   width: 384px;
@@ -5600,12 +5669,13 @@
       rgba(237, 237, 227, 1) 200%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 414px;
+  width: 100%;
   height: 1153px;
   display: block;
   position: absolute;
   left: 0px;
   top: 4617px;
+  min-width: 0;
 }
 .div126 {
   height: 1113px;
@@ -5929,7 +5999,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -5976,7 +6046,7 @@
 }
 @media (min-width: 414px) {
   .img___5NxLl {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogo40976E39C5C646C8Be427D059A418536Png4 {
@@ -5990,12 +6060,13 @@
   left: 82px;
 }
 .div135 {
-  width: 384px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 15px;
   top: 5809px;
+  min-width: 0;
 }
 .div136 {
   height: 169px;
@@ -6371,12 +6442,13 @@
       rgba(237, 237, 227, 1) 199%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 414px;
+  width: 100%;
   height: 372px;
   display: block;
   position: absolute;
   left: 0px;
   top: 6500px;
+  min-width: 0;
 }
 .group8Png2 {
   background: url("/plasmic/sparq/images/group8Png.png") 0px 0px / 150px 150px no-repeat;
@@ -6480,14 +6552,14 @@
   height: 15px;
   display: block;
   position: absolute;
-  top: 3px;
-  left: 80px;
+  top: 2px;
+  left: 54px;
 }
 ._485BasedOn1000Reviews11 {
   position: absolute;
   top: 3px;
-  left: 160px;
-  width: 175px;
+  left: 140px;
+  width: auto;
   height: 15px;
   transform: translate(0.06200000000001182px, 0px);
   display: flex;
@@ -6516,7 +6588,7 @@
   position: absolute;
   top: 16px;
   left: 59px;
-  width: 128px;
+  width: auto;
   height: 18px;
   transform: translate(-0.26599999999999824px, 0px);
   display: flex;
@@ -6563,7 +6635,7 @@
 }
 @media (min-width: 414px) {
   .img__n1DKj {
-    display: block !important;
+    display: none !important;
   }
 }
 .paymentlogopng4 {
@@ -6577,12 +6649,13 @@
   left: 97px;
 }
 .div145 {
-  width: 384px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 15px;
   top: 6900px;
+  min-width: 0;
 }
 @media (min-width: 414px) {
   .div145 {
@@ -6841,12 +6914,13 @@
 }
 .divgetyourvitamin2 {
   background: rgba(243, 243, 237, 1);
-  width: 414px;
+  width: 100%;
   height: 685px;
   display: block;
   position: absolute;
   left: 0px;
   top: 8100px;
+  min-width: 0;
 }
 .div151 {
   width: 384px;
@@ -9126,7 +9200,7 @@
   left: 13px;
   top: 290px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .div315 {
   width: 352px;
@@ -9406,7 +9480,6 @@
   border-radius: 50px;
 }
 .div324 {
-  background: url("/plasmic/sparq/images/div4.png") 9px 13px / 26px 18px no-repeat;
   box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, 1);
   width: 44px;
   height: 44px;
@@ -9778,12 +9851,13 @@
 }
 .div88 {
   background: rgba(63, 58, 41, 1);
-  width: 414px;
+  width: 100%;
   height: 189px;
   display: block;
   position: absolute;
   left: 0px;
   top: 8786px;
+  min-width: 0;
 }
 .div89 {
   width: 414px;
@@ -9858,8 +9932,10 @@
 }
 ._320Px {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 9309px;
+  align-self: stretch;
+  min-width: 0;
   flex-shrink: 0;
 }
 @media (min-width: 320px) {
@@ -9874,12 +9950,13 @@
 }
 .div176 {
   background: rgba(255, 205, 87, 1);
-  width: 320px;
+  width: 100%;
   height: 117px;
   display: block;
   position: absolute;
   left: 0px;
   top: 0px;
+  min-width: 0;
 }
 .div177 {
   height: 95px;
@@ -9963,12 +10040,13 @@
 .div178 {
   background: url("/plasmic/sparq/images/div.png") 0px 0px / 3019px 1410px no-repeat,
     rgba(238, 238, 238, 1);
-  width: 320px;
+  width: 100%;
   height: 1203px;
   display: block;
   position: absolute;
   left: 0px;
   top: 117px;
+  min-width: 0;
 }
 .div179 {
   height: 1148px;
@@ -10124,7 +10202,7 @@
   color: rgba(63, 58, 41, 1);
 }
 .ladybaguette2020Img3156Edit2Jpg2 {
-  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / 320px 480px no-repeat;
+  background: url("/plasmic/sparq/images/ladybaguette2020Img3156Edit2Jpg.jpeg") 0px 0px / cover no-repeat;
   transform: translate(0px, -0.031999999999982265px);
   width: 320px;
   height: 480px;
@@ -10347,12 +10425,13 @@
   position: relative;
 }
 .ul11 {
-  width: 300px;
+  width: 100%;
   height: 86px;
   display: block;
   position: absolute;
-  left: 10px;
+  left: 0px;
   top: 1350px;
+  min-width: 0;
 }
 .asFeaturedIn3 {
   position: absolute;
@@ -10437,12 +10516,13 @@
       rgba(237, 237, 227, 1) 200%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 320px;
+  width: 100%;
   height: 818px;
   display: block;
   position: absolute;
   left: 0px;
   top: 1466px;
+  min-width: 0;
 }
 .div185 {
   height: 818px;
@@ -10713,12 +10793,13 @@
   color: rgba(102, 102, 102, 1);
 }
 .div193 {
-  width: 290px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
-  left: 15px;
+  left: 0px;
   top: 2313px;
+  min-width: 0;
 }
 .div194 {
   height: 157px;
@@ -10731,7 +10812,7 @@
 .formulatedWithZeroNic5 {
   position: absolute;
   top: 4px;
-  left: 37px;
+  left: 50px;
   width: 217px;
   height: 14px;
   transform: translate(-0.39099999999999824px, 0px);
@@ -10769,6 +10850,8 @@
   letter-spacing: 0em;
   line-height: 40px;
   color: rgba(63, 58, 41, 1);
+  width: 100%;
+  min-width: 0;
 }
 .div195 {
   height: 791px;
@@ -10777,17 +10860,20 @@
   top: 167px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .rechargeWithVitaminsAminoAcidsAndHerbsTraditionallyFoundInSupplementsThatElevateMentalAndPhysicalEndurance2 {
   position: absolute;
   top: 12px;
   left: 1px;
-  width: 290px;
+  width: 100%;
   height: 95px;
   transform: translate(-0.485px, 0px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 .text__lBlK {
   display: block;
@@ -10800,24 +10886,42 @@
   color: rgba(227, 166, 20, 1);
 }
 .sparqBoxAnimationLoopShorterVersiongif3 {
-  background: url("/plasmic/sparq/images/sparqBoxAnimationLoopShorterVersiongif.png") 0px 0px / 280px 158px no-repeat;
-  width: 280px;
+  background: none;
+  width: 100%;
   height: 158px;
   display: block;
   position: absolute;
   top: 135px;
-  left: 10px;
+  left: 0px;
+  min-width: 0;
+}
+.img___2AsM {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 158px;
+  min-width: 0;
+}
+.img___2AsM > picture > img {
+  object-fit: cover;
+}
+.img___2AsM > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
 }
 .byTradingInNicAndHarmfulChemicalsForExtensivelyResearchedNutraceuticalIngredientsSparqIsImaginingTheEvolutionOfInhalationWhereWellnessIsTheUltimateGoalOurPatentedDeviceVitaminAirIsSustainablyDesignedToImproveTheLivesOfUsersThroughPositiveLifestyleChangesAndSocialInteractionsTeamingUpWithTopScientificMindsSparqContinuesToResearchTheRealmOfVitaminAndHerbalAbsorptionThroughTheLungsWeSpareNoExpenseInOurCommitmentToProducingMeaningfulAndTransformativeInnovations2 {
   position: absolute;
   top: 327px;
   left: 1px;
-  width: 288px;
+  width: 100%;
   height: 316px;
   transform: translate(0.17100000000000004px, -0.28199999999998226px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 .text__zyyQa {
   display: block;
@@ -10835,8 +10939,9 @@
   display: block;
   position: absolute;
   top: 648px;
-  left: 0px;
+  left: 15px;
   right: 0px;
+  width: auto;
 }
 .p11 {
   width: 290px;
@@ -10952,12 +11057,13 @@
 }
 .div197 {
   background: rgba(250, 250, 248, 1);
-  width: 320px;
+  width: 100%;
   height: 1325px;
   display: block;
   position: absolute;
   left: 0px;
   top: 3301px;
+  min-width: 0;
 }
 .div198 {
   width: 290px;
@@ -11475,12 +11581,13 @@
       rgba(237, 237, 227, 1) 200%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 320px;
+  width: 100%;
   height: 1159px;
   display: block;
   position: absolute;
   left: 0px;
   top: 4625px;
+  min-width: 0;
 }
 .div209 {
   height: 1119px;
@@ -11489,6 +11596,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .promissoryCommitment3 {
   position: absolute;
@@ -11867,12 +11976,13 @@
   left: 35px;
 }
 .div218 {
-  width: 290px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 15px;
   top: 5850px;
+  min-width: 0;
 }
 .div219 {
   height: 169px;
@@ -11881,6 +11991,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 100%;
+  min-width: 0;
 }
 .customerReviews3 {
   position: absolute;
@@ -12247,12 +12359,13 @@
       rgba(237, 237, 227, 1) 199%
     )
     0% 0% / 100% 100% no-repeat;
-  width: 320px;
+  width: 100%;
   height: 372px;
   display: block;
   position: absolute;
   left: 0px;
   top: 6570px;
+  min-width: 0;
 }
 .group8Png3 {
   background: url("/plasmic/sparq/images/group8Png.png") 0px 0px / 150px 150px no-repeat;
@@ -12363,7 +12476,7 @@
   position: absolute;
   top: 3px;
   left: 113px;
-  width: 175px;
+  width: auto;
   height: 15px;
   transform: translate(0.06199999999999761px, 0px);
   display: flex;
@@ -12372,7 +12485,7 @@
 }
 .text__kPq0Z {
   display: block;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 0em;
   line-height: 22px;
@@ -12453,12 +12566,13 @@
   left: 50px;
 }
 .div228 {
-  width: 290px;
+  width: 100%;
   height: 1px;
   display: block;
   position: absolute;
   left: 15px;
   top: 7000px;
+  min-width: 0;
 }
 .h27 {
   width: 290px;
@@ -12720,12 +12834,13 @@
 }
 .divgetyourvitamin3 {
   background: rgba(243, 243, 237, 1);
-  width: 320px;
+  width: 100%;
   height: 720px;
   display: block;
   position: absolute;
   left: 0px;
   top: 8400px;
+  min-width: 0;
 }
 .div234 {
   width: 290px;
@@ -15005,7 +15120,7 @@
   left: 14px;
   top: 334px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .div302 {
   width: 258px;
@@ -15368,18 +15483,20 @@
   color: rgba(98, 98, 98, 1);
 }
 .divshopifySectionLpg12Footer2 {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   position: absolute;
   left: 0px;
   top: 9120px;
+  min-width: 0;
 }
 .divshopifySectionLpg12Footer2 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 10764.828px);
   height: calc(100% + 10764.828px);
 }
