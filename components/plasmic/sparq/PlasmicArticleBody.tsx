@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -60,8 +60,25 @@ export type PlasmicArticleBody__OverridesType = {
   article?: p.Flex<"div">;
   articleBody?: p.Flex<"div">;
   asFeaturedIn?: p.Flex<typeof AsFeaturedIn>;
+  heroImage?: p.Flex<typeof p.PlasmicImg>;
+  paragraph1?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  button?: p.Flex<"button">;
+  image1?: p.Flex<typeof p.PlasmicImg>;
+  paragraph2?: p.Flex<"div">;
+  image2?: p.Flex<typeof p.PlasmicImg>;
+  paragraph3?: p.Flex<"div">;
+  image3?: p.Flex<typeof p.PlasmicImg>;
+  paragraph4?: p.Flex<"div">;
+  image4?: p.Flex<typeof p.PlasmicImg>;
+  paragraph5?: p.Flex<"div">;
+  image5?: p.Flex<typeof p.PlasmicImg>;
+  text?: p.Flex<"div">;
+  paragraph6?: p.Flex<"div">;
+  image6?: p.Flex<typeof p.PlasmicImg>;
+  aOutroH1?: p.Flex<"div">;
+  aOutroH2?: p.Flex<"div">;
+  sCta?: p.Flex<"button">;
+  aOutroH3?: p.Flex<"div">;
   reviews?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
   sideCta?: p.Flex<typeof SideCta>;
@@ -79,6 +96,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicArticleBody__RenderFunc(props: {
   variants: PlasmicArticleBody__VariantsArgs;
   args: PlasmicArticleBody__ArgsType;
@@ -87,6 +111,7 @@ function PlasmicArticleBody__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -131,15 +156,23 @@ function PlasmicArticleBody__RenderFunc(props: {
               data-plasmic-override={overrides.articleBody}
               className={classNames(projectcss.all, sty.articleBody)}
             >
-              <AsFeaturedIn
-                data-plasmic-name={"asFeaturedIn"}
-                data-plasmic-override={overrides.asFeaturedIn}
-                className={classNames("__wab_instance", sty.asFeaturedIn)}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "smallestMobile")
+                  ? true
+                  : true
+              ) ? (
+                <AsFeaturedIn
+                  data-plasmic-name={"asFeaturedIn"}
+                  data-plasmic-override={overrides.asFeaturedIn}
+                  className={classNames("__wab_instance", sty.asFeaturedIn)}
+                />
+              ) : null}
 
               <p.PlasmicImg
+                data-plasmic-name={"heroImage"}
+                data-plasmic-override={overrides.heroImage}
                 alt={""}
-                className={classNames(sty.img__mhNf)}
+                className={classNames(sty.heroImage)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -159,10 +192,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               />
 
               <div
+                data-plasmic-name={"paragraph1"}
+                data-plasmic-override={overrides.paragraph1}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__zbhgt
+                  sty.paragraph1
                 )}
               >
                 <React.Fragment>
@@ -194,8 +229,10 @@ function PlasmicArticleBody__RenderFunc(props: {
                 platform={"nextjs"}
               >
                 <p.PlasmicImg
+                  data-plasmic-name={"image1"}
+                  data-plasmic-override={overrides.image1}
                   alt={""}
-                  className={classNames(sty.img__zJyj8)}
+                  className={classNames(sty.image1)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -213,10 +250,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               </p.PlasmicLink>
 
               <div
+                data-plasmic-name={"paragraph2"}
+                data-plasmic-override={overrides.paragraph2}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__zbyyq
+                  sty.paragraph2
                 )}
               >
                 <React.Fragment>
@@ -240,8 +279,10 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <p.PlasmicImg
+                data-plasmic-name={"image2"}
+                data-plasmic-override={overrides.image2}
                 alt={""}
-                className={classNames(sty.img__aJloq)}
+                className={classNames(sty.image2)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -261,10 +302,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               />
 
               <div
+                data-plasmic-name={"paragraph3"}
+                data-plasmic-override={overrides.paragraph3}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___3BCi
+                  sty.paragraph3
                 )}
               >
                 {
@@ -273,8 +316,10 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <p.PlasmicImg
+                data-plasmic-name={"image3"}
+                data-plasmic-override={overrides.image3}
                 alt={""}
-                className={classNames(sty.img__j8Rs)}
+                className={classNames(sty.image3)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -291,10 +336,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               />
 
               <div
+                data-plasmic-name={"paragraph4"}
+                data-plasmic-override={overrides.paragraph4}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___0CEqr
+                  sty.paragraph4
                 )}
               >
                 <React.Fragment>
@@ -316,8 +363,10 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <p.PlasmicImg
+                data-plasmic-name={"image4"}
+                data-plasmic-override={overrides.image4}
                 alt={""}
-                className={classNames(sty.img__r4Vo8)}
+                className={classNames(sty.image4)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -334,10 +383,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               />
 
               <div
+                data-plasmic-name={"paragraph5"}
+                data-plasmic-override={overrides.paragraph5}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__qIfFz
+                  sty.paragraph5
                 )}
               >
                 <React.Fragment>
@@ -417,8 +468,10 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <p.PlasmicImg
+                data-plasmic-name={"image5"}
+                data-plasmic-override={overrides.image5}
                 alt={""}
-                className={classNames(sty.img__xgNz9)}
+                className={classNames(sty.image5)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -434,33 +487,43 @@ function PlasmicArticleBody__RenderFunc(props: {
                 }}
               />
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___1X2Du
-                )}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
-                  >
-                    {"Figure 1:"}
-                  </span>
+              {(
+                hasVariant(globalVariants, "screen", "smallestMobile")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text
+                  )}
+                >
                   <React.Fragment>
-                    {
-                      " ISO-Accredited Laboratory certified safety and ensured the liquid remains stable even when heated."
-                    }
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"Figure 1:"}
+                    </span>
+                    <React.Fragment>
+                      {
+                        " ISO-Accredited Laboratory certified safety and ensured the liquid remains stable even when heated."
+                      }
+                    </React.Fragment>
                   </React.Fragment>
-                </React.Fragment>
-              </div>
+                </div>
+              ) : null}
 
               <div
+                data-plasmic-name={"paragraph6"}
+                data-plasmic-override={overrides.paragraph6}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__jt4Ir
+                  sty.paragraph6
                 )}
               >
                 <React.Fragment>
@@ -484,8 +547,10 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <p.PlasmicImg
+                data-plasmic-name={"image6"}
+                data-plasmic-override={overrides.image6}
                 alt={""}
-                className={classNames(sty.img__dpMz6)}
+                className={classNames(sty.image6)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -502,10 +567,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               />
 
               <div
+                data-plasmic-name={"aOutroH1"}
+                data-plasmic-override={overrides.aOutroH1}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__axNCu
+                  sty.aOutroH1
                 )}
               >
                 <React.Fragment>
@@ -519,10 +586,12 @@ function PlasmicArticleBody__RenderFunc(props: {
               </div>
 
               <div
+                data-plasmic-name={"aOutroH2"}
+                data-plasmic-override={overrides.aOutroH2}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__jks7P
+                  sty.aOutroH2
                 )}
               >
                 {"Fast Same Day Shipping"}
@@ -531,45 +600,60 @@ function PlasmicArticleBody__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.columns__i8Cp)}>
                 <div className={classNames(projectcss.all, sty.column__aepe3)}>
                   <button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
+                    data-plasmic-name={"sCta"}
+                    data-plasmic-override={overrides.sCta}
                     className={classNames(
                       projectcss.all,
                       projectcss.button,
                       projectcss.__wab_text,
-                      sty.button
+                      sty.sCta
                     )}
+                    ref={ref => {
+                      $refs["sCta"] = ref;
+                    }}
                   >
                     {"CLAIM FREE PODS 👉"}
                   </button>
                 </div>
 
-                <div className={classNames(projectcss.all, sty.column__cc2J3)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___4Ldwn)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/sparq/images/dividersvg.bin",
-                      fullWidth: 5,
-                      fullHeight: 150,
-                      aspectRatio: 0.033333
-                    }}
-                  />
-                </div>
+                {(
+                  hasVariant(globalVariants, "screen", "desktopOnly")
+                    ? true
+                    : hasVariant(globalVariants, "screen", "smallestMobile")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column__cc2J3)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___4Ldwn)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sparq/images/dividersvg.bin",
+                        fullWidth: 5,
+                        fullHeight: 150,
+                        aspectRatio: 0.033333
+                      }}
+                    />
+                  </div>
+                ) : null}
 
                 <div className={classNames(projectcss.all, sty.column___2Smb)}>
                   <div
+                    data-plasmic-name={"aOutroH3"}
+                    data-plasmic-override={overrides.aOutroH3}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___5Of3I
+                      sty.aOutroH3
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "desktopOnly")
@@ -660,17 +744,96 @@ const PlasmicDescendants = {
     "article",
     "articleBody",
     "asFeaturedIn",
+    "heroImage",
+    "paragraph1",
     "link",
-    "button",
+    "image1",
+    "paragraph2",
+    "image2",
+    "paragraph3",
+    "image3",
+    "paragraph4",
+    "image4",
+    "paragraph5",
+    "image5",
+    "text",
+    "paragraph6",
+    "image6",
+    "aOutroH1",
+    "aOutroH2",
+    "sCta",
+    "aOutroH3",
     "reviews",
     "freeBox",
     "sideCta"
   ],
-  article: ["article", "articleBody", "asFeaturedIn", "link", "button"],
-  articleBody: ["articleBody", "asFeaturedIn", "link", "button"],
+  article: [
+    "article",
+    "articleBody",
+    "asFeaturedIn",
+    "heroImage",
+    "paragraph1",
+    "link",
+    "image1",
+    "paragraph2",
+    "image2",
+    "paragraph3",
+    "image3",
+    "paragraph4",
+    "image4",
+    "paragraph5",
+    "image5",
+    "text",
+    "paragraph6",
+    "image6",
+    "aOutroH1",
+    "aOutroH2",
+    "sCta",
+    "aOutroH3"
+  ],
+  articleBody: [
+    "articleBody",
+    "asFeaturedIn",
+    "heroImage",
+    "paragraph1",
+    "link",
+    "image1",
+    "paragraph2",
+    "image2",
+    "paragraph3",
+    "image3",
+    "paragraph4",
+    "image4",
+    "paragraph5",
+    "image5",
+    "text",
+    "paragraph6",
+    "image6",
+    "aOutroH1",
+    "aOutroH2",
+    "sCta",
+    "aOutroH3"
+  ],
   asFeaturedIn: ["asFeaturedIn"],
-  link: ["link"],
-  button: ["button"],
+  heroImage: ["heroImage"],
+  paragraph1: ["paragraph1"],
+  link: ["link", "image1"],
+  image1: ["image1"],
+  paragraph2: ["paragraph2"],
+  image2: ["image2"],
+  paragraph3: ["paragraph3"],
+  image3: ["image3"],
+  paragraph4: ["paragraph4"],
+  image4: ["image4"],
+  paragraph5: ["paragraph5"],
+  image5: ["image5"],
+  text: ["text"],
+  paragraph6: ["paragraph6"],
+  image6: ["image6"],
+  aOutroH1: ["aOutroH1"],
+  aOutroH2: ["aOutroH2"],
+  sCta: ["sCta"],
+  aOutroH3: ["aOutroH3"],
   reviews: ["reviews", "freeBox", "sideCta"],
   freeBox: ["freeBox", "sideCta"],
   sideCta: ["sideCta"]
@@ -683,8 +846,25 @@ type NodeDefaultElementType = {
   article: "div";
   articleBody: "div";
   asFeaturedIn: typeof AsFeaturedIn;
+  heroImage: typeof p.PlasmicImg;
+  paragraph1: "div";
   link: "a";
-  button: "button";
+  image1: typeof p.PlasmicImg;
+  paragraph2: "div";
+  image2: typeof p.PlasmicImg;
+  paragraph3: "div";
+  image3: typeof p.PlasmicImg;
+  paragraph4: "div";
+  image4: typeof p.PlasmicImg;
+  paragraph5: "div";
+  image5: typeof p.PlasmicImg;
+  text: "div";
+  paragraph6: "div";
+  image6: typeof p.PlasmicImg;
+  aOutroH1: "div";
+  aOutroH2: "div";
+  sCta: "button";
+  aOutroH3: "div";
   reviews: "div";
   freeBox: "div";
   sideCta: typeof SideCta;
@@ -754,8 +934,25 @@ export const PlasmicArticleBody = Object.assign(
     article: makeNodeComponent("article"),
     articleBody: makeNodeComponent("articleBody"),
     asFeaturedIn: makeNodeComponent("asFeaturedIn"),
+    heroImage: makeNodeComponent("heroImage"),
+    paragraph1: makeNodeComponent("paragraph1"),
     link: makeNodeComponent("link"),
-    button: makeNodeComponent("button"),
+    image1: makeNodeComponent("image1"),
+    paragraph2: makeNodeComponent("paragraph2"),
+    image2: makeNodeComponent("image2"),
+    paragraph3: makeNodeComponent("paragraph3"),
+    image3: makeNodeComponent("image3"),
+    paragraph4: makeNodeComponent("paragraph4"),
+    image4: makeNodeComponent("image4"),
+    paragraph5: makeNodeComponent("paragraph5"),
+    image5: makeNodeComponent("image5"),
+    text: makeNodeComponent("text"),
+    paragraph6: makeNodeComponent("paragraph6"),
+    image6: makeNodeComponent("image6"),
+    aOutroH1: makeNodeComponent("aOutroH1"),
+    aOutroH2: makeNodeComponent("aOutroH2"),
+    sCta: makeNodeComponent("sCta"),
+    aOutroH3: makeNodeComponent("aOutroH3"),
     reviews: makeNodeComponent("reviews"),
     freeBox: makeNodeComponent("freeBox"),
     sideCta: makeNodeComponent("sideCta"),

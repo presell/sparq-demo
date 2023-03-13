@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -35,6 +35,12 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Nav1440CwOffer from "../../Nav1440CwOffer"; // plasmic-import: VFt7Vc1NjM/component
+import DisposableBogoOffer1440Px from "../../DisposableBogoOffer1440Px"; // plasmic-import: 53K2ZN1GKdC/component
+import Nav414CwOffer from "../../Nav414CwOffer"; // plasmic-import: _hZzUsuiJ8/component
+import _414BogoOffer from "../../_414BogoOffer"; // plasmic-import: kIaHv9PSd-D/component
+import Nav320CwOffer from "../../Nav320CwOffer"; // plasmic-import: 8Fyu1G9ksw/component
+import _320PxCwOfferBogo from "../../_320PxCwOfferBogo"; // plasmic-import: QZ1kJIjbyf3/component
 
 import { useScreenVariants as useScreenVariantsbai21PvFaWEr } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: BAI21pvFA_wEr/globalVariant
 
@@ -55,13 +61,9 @@ export const PlasmicDisposableInfo__ArgProps = new Array<ArgPropType>();
 export type PlasmicDisposableInfo__OverridesType = {
   root?: p.Flex<"div">;
   _1440Px?: p.Flex<"div">;
-  div?: p.Flex<"div">;
-  div2?: p.Flex<"div">;
-  label?: p.Flex<"a"> & Partial<LinkProps>;
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday?: p.Flex<"div">;
-  freeShipping?: p.Flex<"div">;
-  div3?: p.Flex<"div">;
-  div4?: p.Flex<"div">;
+  nav1440CwOffer?: p.Flex<typeof Nav1440CwOffer>;
+  hero?: p.Flex<"div">;
+  heroText?: p.Flex<"div">;
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png?: p.Flex<"a"> &
     Partial<LinkProps>;
   h1?: p.Flex<"div">;
@@ -91,14 +93,14 @@ export type PlasmicDisposableInfo__OverridesType = {
   div7?: p.Flex<"div">;
   bannerrevE286F02653C5463D95E17D983A6A0996Png?: p.Flex<"div">;
   div8?: p.Flex<"div">;
-  ul2?: p.Flex<"div">;
+  press?: p.Flex<"div">;
   asFeaturedIn?: p.Flex<"div">;
   _5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png?: p.Flex<"div">;
   _800PxIndiegogoLogo87E824Db34F744159219Ab56Dca36549Png?: p.Flex<"div">;
   _1200PxScientificAmericanLogosvg9440Dc46Eee24228B6A5E91E5B0C8581Png?: p.Flex<"div">;
   asfeaturedin49Bda2Aea3Ea94D3CBd4F7D2Ad76Ae608Png?: p.Flex<"div">;
   entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png?: p.Flex<"div">;
-  div9?: p.Flex<"div">;
+  steps?: p.Flex<"div">;
   confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png?: p.Flex<"div">;
   div10?: p.Flex<"div">;
   inhaleWithConfidence?: p.Flex<"div">;
@@ -119,7 +121,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   div17?: p.Flex<"div">;
   _3?: p.Flex<"div">;
   exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway?: p.Flex<"div">;
-  div18?: p.Flex<"div">;
+  headingSection?: p.Flex<"div">;
   div19?: p.Flex<"div">;
   formulatedWithZeroNic?: p.Flex<"div">;
   h22?: p.Flex<"div">;
@@ -147,7 +149,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   handsvg2?: p.Flex<"div">;
   paymentlogo40976E39C5C646C8Be427D059A418536Png?: p.Flex<"div">;
   sparqBoxAnimationLoopShorterVersiongif?: p.Flex<"div">;
-  div23?: p.Flex<"div">;
+  formulation?: p.Flex<"div">;
   div24?: p.Flex<"div">;
   div25?: p.Flex<"div">;
   organicVegetableGlycerinAndNaturalFlavors?: p.Flex<"div">;
@@ -181,7 +183,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   myProject4Png?: p.Flex<"div">;
   acaiBerry?: p.Flex<"div">;
   metabolismBooster?: p.Flex<"div">;
-  div34?: p.Flex<"div">;
+  values?: p.Flex<"div">;
   promissory700Cba5AB8264B5C8106987450146E3Bpng?: p.Flex<"div">;
   promissorylayerpng?: p.Flex<"div">;
   div35?: p.Flex<"div">;
@@ -211,7 +213,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   getYoursNow3?: p.Flex<"div">;
   handsvg3?: p.Flex<"div">;
   paymentlogo40976E39C5C646C8Be427D059A418536Png2?: p.Flex<"div">;
-  div44?: p.Flex<"div">;
+  reviews?: p.Flex<"div">;
   div45?: p.Flex<"div">;
   customerReviews?: p.Flex<"div">;
   dontJustTakeOurWordForIt?: p.Flex<"div">;
@@ -251,7 +253,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   verifiedBuyer3?: p.Flex<"div">;
   leftarrpng?: p.Flex<"div">;
   rightarrpng?: p.Flex<"div">;
-  div53?: p.Flex<"div">;
+  guarantee?: p.Flex<"div">;
   group8Png?: p.Flex<"div">;
   div54?: p.Flex<"div">;
   satisfactionGuarantee?: p.Flex<"div">;
@@ -266,7 +268,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   getYoursNow4?: p.Flex<"div">;
   handsvg4?: p.Flex<"div">;
   paymentlogopng2?: p.Flex<"div">;
-  div56?: p.Flex<"div">;
+  qa?: p.Flex<"div">;
   div57?: p.Flex<"div">;
   h23?: p.Flex<"div">;
   questions?: p.Flex<"div">;
@@ -299,7 +301,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   div70?: p.Flex<"div">;
   whatMaterialsIsSparqMadeFrom?: p.Flex<"div">;
   ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery?: p.Flex<"div">;
-  divgetyourvitamin?: p.Flex<"div">;
+  offer?: p.Flex<"div">;
   div63?: p.Flex<"div">;
   div64?: p.Flex<"div">;
   getYourVitaminAirToday?: p.Flex<"div">;
@@ -308,44 +310,14 @@ export type PlasmicDisposableInfo__OverridesType = {
   _485BasedOn1000Reviews6?: p.Flex<"div">;
   _0Nic100FlavorLabTestedVitaminsRecyclable?: p.Flex<"div">;
   div65?: p.Flex<"div">;
-  divprodarea?: p.Flex<"div">;
-  div71?: p.Flex<"div">;
-  div72?: p.Flex<"div">;
-  prodimagepng?: p.Flex<"div">;
-  div73?: p.Flex<"div">;
-  buy2Get1?: p.Flex<"div">;
-  free?: p.Flex<"div">;
-  div74?: p.Flex<"div">;
-  specialOffer?: p.Flex<"div">;
-  freeVitaminAir?: p.Flex<"div">;
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack?: p.Flex<"div">;
-  div75?: p.Flex<"div">;
-  chooseFlavor?: p.Flex<"div">;
-  div76?: p.Flex<"div">;
-  div77?: p.Flex<"a"> & Partial<LinkProps>;
-  div78?: p.Flex<"div">;
-  div79?: p.Flex<"div">;
-  strawberry?: p.Flex<"div">;
-  div80?: p.Flex<"a"> & Partial<LinkProps>;
-  div81?: p.Flex<"div">;
-  div82?: p.Flex<"div">;
-  vanila?: p.Flex<"div">;
-  div83?: p.Flex<"div">;
-  adifferance?: p.Flex<"div">;
-  feelTheDifference?: p.Flex<"div">;
-  fingericonpng?: p.Flex<"div">;
-  paymentcardpng?: p.Flex<"div">;
-  div92?: p.Flex<"div">;
+  disposableBogoOffer1440Px?: p.Flex<typeof DisposableBogoOffer1440Px>;
+  footer?: p.Flex<"div">;
   div93?: p.Flex<"div">;
   _2022CopyrightBySparq?: p.Flex<"div">;
   sparqLogoFinal0311Png?: p.Flex<"a"> & Partial<LinkProps>;
   privacyPolicyTermsConditions?: p.Flex<"div">;
   _414Px?: p.Flex<"div">;
-  div91?: p.Flex<"div">;
-  div94?: p.Flex<"div">;
-  label4?: p.Flex<"a"> & Partial<LinkProps>;
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2?: p.Flex<"div">;
-  freeShipping4?: p.Flex<"div">;
+  nav414CwOffer?: p.Flex<typeof Nav414CwOffer>;
   div95?: p.Flex<"div">;
   div96?: p.Flex<"div">;
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2?: p.Flex<"a"> &
@@ -695,33 +667,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   aget2?: p.Flex<"div">;
   fingericonpng2?: p.Flex<"div">;
   paymentcardpng2?: p.Flex<"div">;
-  divprodarea5?: p.Flex<"div">;
-  div315?: p.Flex<"div">;
-  aget24?: p.Flex<"div">;
-  feelTheDifference3?: p.Flex<"div">;
-  fingericonpng5?: p.Flex<"div">;
-  paymentcardpng5?: p.Flex<"div">;
-  div316?: p.Flex<"div">;
-  div317?: p.Flex<"div">;
-  prodimagepng5?: p.Flex<"div">;
-  div318?: p.Flex<"div">;
-  buy2Get5?: p.Flex<"div">;
-  free5?: p.Flex<"div">;
-  div319?: p.Flex<"div">;
-  specialOffer3?: p.Flex<"div">;
-  freeVitaminAir3?: p.Flex<"div">;
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3?: p.Flex<"div">;
-  div320?: p.Flex<"div">;
-  chooseFlavor7?: p.Flex<"div">;
-  div321?: p.Flex<"div">;
-  div322?: p.Flex<"a"> & Partial<LinkProps>;
-  div323?: p.Flex<"div">;
-  div324?: p.Flex<"div">;
-  strawberry11?: p.Flex<"div">;
-  div325?: p.Flex<"a"> & Partial<LinkProps>;
-  div326?: p.Flex<"div">;
-  div327?: p.Flex<"div">;
-  vanila5?: p.Flex<"div">;
+  _414BogoOffer?: p.Flex<typeof _414BogoOffer>;
   divshopifySectionLpg12Footer?: p.Flex<"div">;
   figmaPaste2?: p.Flex<"div">;
   div266?: p.Flex<"div">;
@@ -736,11 +682,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   _2022CopyrightBySparq2?: p.Flex<"div">;
   privacyPolicyTermsConditions2?: p.Flex<"div">;
   _320Px?: p.Flex<"div">;
-  div176?: p.Flex<"div">;
-  div177?: p.Flex<"div">;
-  label5?: p.Flex<"a"> & Partial<LinkProps>;
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3?: p.Flex<"div">;
-  freeShipping5?: p.Flex<"div">;
+  nav320CwOffer?: p.Flex<typeof Nav320CwOffer>;
   div178?: p.Flex<"div">;
   div179?: p.Flex<"div">;
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png3?: p.Flex<"a"> &
@@ -1090,33 +1032,7 @@ export type PlasmicDisposableInfo__OverridesType = {
   aget22?: p.Flex<"div">;
   fingericonpng3?: p.Flex<"div">;
   paymentcardpng3?: p.Flex<"div">;
-  divprodarea4?: p.Flex<"div">;
-  div302?: p.Flex<"div">;
-  aget23?: p.Flex<"div">;
-  feelTheDifference2?: p.Flex<"div">;
-  fingericonpng4?: p.Flex<"div">;
-  paymentcardpng4?: p.Flex<"div">;
-  div303?: p.Flex<"div">;
-  div304?: p.Flex<"div">;
-  prodimagepng4?: p.Flex<"div">;
-  div305?: p.Flex<"div">;
-  buy2Get4?: p.Flex<"div">;
-  free4?: p.Flex<"div">;
-  div306?: p.Flex<"div">;
-  specialOffer2?: p.Flex<"div">;
-  freeVitaminAir2?: p.Flex<"div">;
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2?: p.Flex<"div">;
-  div307?: p.Flex<"div">;
-  chooseFlavor6?: p.Flex<"div">;
-  div308?: p.Flex<"div">;
-  div309?: p.Flex<"a"> & Partial<LinkProps>;
-  div310?: p.Flex<"div">;
-  div311?: p.Flex<"div">;
-  strawberry10?: p.Flex<"div">;
-  div312?: p.Flex<"a"> & Partial<LinkProps>;
-  div313?: p.Flex<"div">;
-  div314?: p.Flex<"div">;
-  vanila4?: p.Flex<"div">;
+  _320PxCwOfferBogo?: p.Flex<typeof _320PxCwOfferBogo>;
   divshopifySectionLpg12Footer2?: p.Flex<"div">;
   div263?: p.Flex<"div">;
   div264?: p.Flex<"div">;
@@ -1145,6 +1061,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicDisposableInfo__RenderFunc(props: {
   variants: PlasmicDisposableInfo__VariantsArgs;
   args: PlasmicDisposableInfo__ArgsType;
@@ -1153,6 +1076,7 @@ function PlasmicDisposableInfo__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -1203,109 +1127,21 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               data-plasmic-override={overrides._1440Px}
               className={classNames(projectcss.all, sty._1440Px)}
             >
-              <div
-                data-plasmic-name={"div"}
-                data-plasmic-override={overrides.div}
-                className={classNames(projectcss.all, sty.div)}
-              >
-                <div
-                  data-plasmic-name={"div2"}
-                  data-plasmic-override={overrides.div2}
-                  className={classNames(projectcss.all, sty.div2)}
-                >
-                  <p.PlasmicLink
-                    data-plasmic-name={"label"}
-                    data-plasmic-override={overrides.label}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.label
-                    )}
-                    component={Link}
-                    href={"#offer" as const}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bRcfs
-                      )}
-                    >
-                      {"CLAIM FREE DEVICE"}
-                    </div>
-                  </p.PlasmicLink>
-
-                  <div
-                    data-plasmic-name={
-                      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday"
-                    }
-                    data-plasmic-override={
-                      overrides.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      sty.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3C6Lb
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"SPECIAL OFFER:"}
-                        </span>
-                        <React.Fragment>
-                          {
-                            " Claim this one-time offer. Try Vitamin Air at a fraction of the regular price today."
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  </div>
-
-                  <div
-                    data-plasmic-name={"freeShipping"}
-                    data-plasmic-override={overrides.freeShipping}
-                    className={classNames(projectcss.all, sty.freeShipping)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "desktopOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___3IWmp
-                        )}
-                      >
-                        {"+ Free Shipping"}
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              </div>
+              <Nav1440CwOffer
+                data-plasmic-name={"nav1440CwOffer"}
+                data-plasmic-override={overrides.nav1440CwOffer}
+                className={classNames("__wab_instance", sty.nav1440CwOffer)}
+              />
 
               <div
-                data-plasmic-name={"div3"}
-                data-plasmic-override={overrides.div3}
-                className={classNames(projectcss.all, sty.div3)}
+                data-plasmic-name={"hero"}
+                data-plasmic-override={overrides.hero}
+                className={classNames(projectcss.all, sty.hero)}
               >
                 <div
-                  data-plasmic-name={"div4"}
-                  data-plasmic-override={overrides.div4}
-                  className={classNames(projectcss.all, sty.div4)}
+                  data-plasmic-name={"heroText"}
+                  data-plasmic-override={overrides.heroText}
+                  className={classNames(projectcss.all, sty.heroText)}
                 >
                   <p.PlasmicLink
                     data-plasmic-name={
@@ -1729,9 +1565,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"ul2"}
-                data-plasmic-override={overrides.ul2}
-                className={classNames(projectcss.all, sty.ul2)}
+                data-plasmic-name={"press"}
+                data-plasmic-override={overrides.press}
+                className={classNames(projectcss.all, sty.press)}
               >
                 <div
                   data-plasmic-name={"asFeaturedIn"}
@@ -1816,9 +1652,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div9"}
-                data-plasmic-override={overrides.div9}
-                className={classNames(projectcss.all, sty.div9)}
+                data-plasmic-name={"steps"}
+                data-plasmic-override={overrides.steps}
+                className={classNames(projectcss.all, sty.steps)}
               >
                 <div
                   data-plasmic-name={
@@ -2134,9 +1970,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div18"}
-                data-plasmic-override={overrides.div18}
-                className={classNames(projectcss.all, sty.div18)}
+                data-plasmic-name={"headingSection"}
+                data-plasmic-override={overrides.headingSection}
+                className={classNames(projectcss.all, sty.headingSection)}
               >
                 <div
                   data-plasmic-name={"div19"}
@@ -2567,9 +2403,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div23"}
-                data-plasmic-override={overrides.div23}
-                className={classNames(projectcss.all, sty.div23)}
+                data-plasmic-name={"formulation"}
+                data-plasmic-override={overrides.formulation}
+                className={classNames(projectcss.all, sty.formulation)}
               >
                 <div
                   data-plasmic-name={"div24"}
@@ -2993,9 +2829,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div34"}
-                data-plasmic-override={overrides.div34}
-                className={classNames(projectcss.all, sty.div34)}
+                data-plasmic-name={"values"}
+                data-plasmic-override={overrides.values}
+                className={classNames(projectcss.all, sty.values)}
               >
                 <div
                   data-plasmic-name={
@@ -3390,9 +3226,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div44"}
-                data-plasmic-override={overrides.div44}
-                className={classNames(projectcss.all, sty.div44)}
+                data-plasmic-name={"reviews"}
+                data-plasmic-override={overrides.reviews}
+                className={classNames(projectcss.all, sty.reviews)}
               >
                 <div
                   data-plasmic-name={"div45"}
@@ -3873,9 +3709,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               </div>
 
               <div
-                data-plasmic-name={"div53"}
-                data-plasmic-override={overrides.div53}
-                className={classNames(projectcss.all, sty.div53)}
+                data-plasmic-name={"guarantee"}
+                data-plasmic-override={overrides.guarantee}
+                className={classNames(projectcss.all, sty.guarantee)}
               >
                 <div
                   data-plasmic-name={"group8Png"}
@@ -4055,9 +3891,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                   : true
               ) ? (
                 <div
-                  data-plasmic-name={"div56"}
-                  data-plasmic-override={overrides.div56}
-                  className={classNames(projectcss.all, sty.div56)}
+                  data-plasmic-name={"qa"}
+                  data-plasmic-override={overrides.qa}
+                  className={classNames(projectcss.all, sty.qa)}
                 >
                   <div
                     data-plasmic-name={"div57"}
@@ -4523,9 +4359,9 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                   : true
               ) ? (
                 <div
-                  data-plasmic-name={"divgetyourvitamin"}
-                  data-plasmic-override={overrides.divgetyourvitamin}
-                  className={classNames(projectcss.all, sty.divgetyourvitamin)}
+                  data-plasmic-name={"offer"}
+                  data-plasmic-override={overrides.offer}
+                  className={classNames(projectcss.all, sty.offer)}
                 >
                   {(
                     hasVariant(globalVariants, "screen", "desktopOnly")
@@ -4649,352 +4485,21 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                     </div>
                   ) : null}
 
-                  <div
-                    data-plasmic-name={"divprodarea"}
-                    data-plasmic-override={overrides.divprodarea}
-                    className={classNames(projectcss.all, sty.divprodarea)}
-                    id={"offer" as const}
-                  >
-                    <div
-                      data-plasmic-name={"div71"}
-                      data-plasmic-override={overrides.div71}
-                      className={classNames(projectcss.all, sty.div71)}
-                    >
-                      <div
-                        data-plasmic-name={"div72"}
-                        data-plasmic-override={overrides.div72}
-                        className={classNames(projectcss.all, sty.div72)}
-                      >
-                        <div
-                          data-plasmic-name={"prodimagepng"}
-                          data-plasmic-override={overrides.prodimagepng}
-                          className={classNames(
-                            projectcss.all,
-                            sty.prodimagepng
-                          )}
-                        />
-
-                        <div
-                          data-plasmic-name={"div73"}
-                          data-plasmic-override={overrides.div73}
-                          className={classNames(projectcss.all, sty.div73)}
-                        >
-                          <div
-                            data-plasmic-name={"buy2Get1"}
-                            data-plasmic-override={overrides.buy2Get1}
-                            className={classNames(projectcss.all, sty.buy2Get1)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__y9EZb
-                              )}
-                            >
-                              {"BUY 2, Get 1"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"free"}
-                            data-plasmic-override={overrides.free}
-                            className={classNames(projectcss.all, sty.free)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__eOrt7
-                              )}
-                            >
-                              {"Free"}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"div74"}
-                        data-plasmic-override={overrides.div74}
-                        className={classNames(projectcss.all, sty.div74)}
-                      >
-                        <div
-                          data-plasmic-name={"specialOffer"}
-                          data-plasmic-override={overrides.specialOffer}
-                          className={classNames(
-                            projectcss.all,
-                            sty.specialOffer
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__sWIbv
-                            )}
-                          >
-                            {"special offer"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"freeVitaminAir"}
-                          data-plasmic-override={overrides.freeVitaminAir}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeVitaminAir
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__gC2Tp
-                            )}
-                          >
-                            {"free vitamin air"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={
-                            "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack"
-                          }
-                          data-plasmic-override={
-                            overrides.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            sty.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__dJona
-                            )}
-                          >
-                            {
-                              "Money-Back Guarantee: Better Flavor & Harder Hits or Your Money Back."
-                            }
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"div75"}
-                          data-plasmic-override={overrides.div75}
-                          className={classNames(projectcss.all, sty.div75)}
-                        >
-                          <div
-                            data-plasmic-name={"chooseFlavor"}
-                            data-plasmic-override={overrides.chooseFlavor}
-                            className={classNames(
-                              projectcss.all,
-                              sty.chooseFlavor
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kMoZe
-                              )}
-                            >
-                              {"Choose Flavor"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div76"}
-                            data-plasmic-override={overrides.div76}
-                            className={classNames(projectcss.all, sty.div76)}
-                          >
-                            <p.PlasmicLink
-                              data-plasmic-name={"div77"}
-                              data-plasmic-override={overrides.div77}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.a,
-                                sty.div77
-                              )}
-                              component={Link}
-                              href={
-                                "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788108:1,39394868748:1,39394817036:1?note=LHP-cw-offer-widget" as const
-                              }
-                              platform={"nextjs"}
-                            >
-                              <div
-                                data-plasmic-name={"div78"}
-                                data-plasmic-override={overrides.div78}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div78
-                                )}
-                              >
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "desktopOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    data-plasmic-name={"div79"}
-                                    data-plasmic-override={overrides.div79}
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.div79
-                                    )}
-                                  />
-                                ) : null}
-                              </div>
-
-                              <div
-                                data-plasmic-name={"strawberry"}
-                                data-plasmic-override={overrides.strawberry}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.strawberry
-                                )}
-                              >
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text___7Cd7
-                                  )}
-                                >
-                                  {"Strawberry"}
-                                </div>
-                              </div>
-                            </p.PlasmicLink>
-
-                            <p.PlasmicLink
-                              data-plasmic-name={"div80"}
-                              data-plasmic-override={overrides.div80}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.a,
-                                sty.div80
-                              )}
-                              component={Link}
-                              href={
-                                "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788236:1,39394868940:1,39394817164:1?discount=FREE&note=LHP-cw-offer-widget" as const
-                              }
-                              platform={"nextjs"}
-                            >
-                              <div
-                                data-plasmic-name={"div81"}
-                                data-plasmic-override={overrides.div81}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div81
-                                )}
-                              >
-                                <div
-                                  data-plasmic-name={"div82"}
-                                  data-plasmic-override={overrides.div82}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.div82
-                                  )}
-                                />
-                              </div>
-
-                              <div
-                                data-plasmic-name={"vanila"}
-                                data-plasmic-override={overrides.vanila}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.vanila
-                                )}
-                              >
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__buNy
-                                  )}
-                                >
-                                  {"Vanilla"}
-                                </div>
-                              </div>
-                            </p.PlasmicLink>
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"div83"}
-                          data-plasmic-override={overrides.div83}
-                          className={classNames(projectcss.all, sty.div83)}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "desktopOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              data-plasmic-name={"adifferance"}
-                              data-plasmic-override={overrides.adifferance}
-                              className={classNames(
-                                projectcss.all,
-                                sty.adifferance
-                              )}
-                            >
-                              <div
-                                data-plasmic-name={"feelTheDifference"}
-                                data-plasmic-override={
-                                  overrides.feelTheDifference
-                                }
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.feelTheDifference
-                                )}
-                              >
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__tWwhe
-                                  )}
-                                >
-                                  {"FEEL THE DIFFERENCE"}
-                                </div>
-                              </div>
-
-                              <div
-                                data-plasmic-name={"fingericonpng"}
-                                data-plasmic-override={overrides.fingericonpng}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.fingericonpng
-                                )}
-                              />
-                            </div>
-                          ) : null}
-
-                          <div
-                            data-plasmic-name={"paymentcardpng"}
-                            data-plasmic-override={overrides.paymentcardpng}
-                            className={classNames(
-                              projectcss.all,
-                              sty.paymentcardpng
-                            )}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <DisposableBogoOffer1440Px
+                    data-plasmic-name={"disposableBogoOffer1440Px"}
+                    data-plasmic-override={overrides.disposableBogoOffer1440Px}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.disposableBogoOffer1440Px
+                    )}
+                  />
                 </div>
               ) : null}
 
               <div
-                data-plasmic-name={"div92"}
-                data-plasmic-override={overrides.div92}
-                className={classNames(projectcss.all, sty.div92)}
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames(projectcss.all, sty.footer)}
               >
                 <div
                   data-plasmic-name={"div93"}
@@ -5071,105 +4576,11 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               data-plasmic-override={overrides._414Px}
               className={classNames(projectcss.all, sty._414Px)}
             >
-              <div
-                data-plasmic-name={"div91"}
-                data-plasmic-override={overrides.div91}
-                className={classNames(projectcss.all, sty.div91)}
-              >
-                {(
-                  hasVariant(globalVariants, "screen", "largestMobile")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"div94"}
-                    data-plasmic-override={overrides.div94}
-                    className={classNames(projectcss.all, sty.div94)}
-                  >
-                    <p.PlasmicLink
-                      data-plasmic-name={"label4"}
-                      data-plasmic-override={overrides.label4}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.label4
-                      )}
-                      component={Link}
-                      href={"#offer" as const}
-                      platform={"nextjs"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__khP8E
-                        )}
-                      >
-                        {"CLAIM FREE DEVICE"}
-                      </div>
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={
-                        "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2"
-                      }
-                      data-plasmic-override={
-                        overrides.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
-                      }
-                      className={classNames(
-                        projectcss.all,
-                        sty.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__w9Qx2
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"SPECIAL OFFER:"}
-                          </span>
-                          <React.Fragment>
-                            {
-                              " Claim this one-time offer. Try Vitamin Air at a fraction of the regular price today."
-                            }
-                          </React.Fragment>
-                        </React.Fragment>
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"freeShipping4"}
-                      data-plasmic-override={overrides.freeShipping4}
-                      className={classNames(projectcss.all, sty.freeShipping4)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "largestMobile")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__hGajI
-                          )}
-                        >
-                          {"+ Free Shipping"}
-                        </div>
-                      ) : null}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
+              <Nav414CwOffer
+                data-plasmic-name={"nav414CwOffer"}
+                data-plasmic-override={overrides.nav414CwOffer}
+                className={classNames("__wab_instance", sty.nav414CwOffer)}
+              />
 
               <div
                 data-plasmic-name={"div95"}
@@ -9827,324 +9238,11 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                   </div>
                 ) : null}
 
-                <div
-                  data-plasmic-name={"divprodarea5"}
-                  data-plasmic-override={overrides.divprodarea5}
-                  className={classNames(projectcss.all, sty.divprodarea5)}
-                  id={"offer" as const}
-                >
-                  <div
-                    data-plasmic-name={"div315"}
-                    data-plasmic-override={overrides.div315}
-                    className={classNames(projectcss.all, sty.div315)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "largestMobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        data-plasmic-name={"aget24"}
-                        data-plasmic-override={overrides.aget24}
-                        className={classNames(projectcss.all, sty.aget24)}
-                      >
-                        <div
-                          data-plasmic-name={"feelTheDifference3"}
-                          data-plasmic-override={overrides.feelTheDifference3}
-                          className={classNames(
-                            projectcss.all,
-                            sty.feelTheDifference3
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__uago0
-                            )}
-                          >
-                            {"FEEL THE DIFFERENCE"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"fingericonpng5"}
-                          data-plasmic-override={overrides.fingericonpng5}
-                          className={classNames(
-                            projectcss.all,
-                            sty.fingericonpng5
-                          )}
-                        />
-                      </div>
-                    ) : null}
-
-                    <div
-                      data-plasmic-name={"paymentcardpng5"}
-                      data-plasmic-override={overrides.paymentcardpng5}
-                      className={classNames(
-                        projectcss.all,
-                        sty.paymentcardpng5
-                      )}
-                    />
-                  </div>
-
-                  <div
-                    data-plasmic-name={"div316"}
-                    data-plasmic-override={overrides.div316}
-                    className={classNames(projectcss.all, sty.div316)}
-                  >
-                    <div
-                      data-plasmic-name={"div317"}
-                      data-plasmic-override={overrides.div317}
-                      className={classNames(projectcss.all, sty.div317)}
-                    >
-                      <div
-                        data-plasmic-name={"prodimagepng5"}
-                        data-plasmic-override={overrides.prodimagepng5}
-                        className={classNames(
-                          projectcss.all,
-                          sty.prodimagepng5
-                        )}
-                      />
-
-                      <div
-                        data-plasmic-name={"div318"}
-                        data-plasmic-override={overrides.div318}
-                        className={classNames(projectcss.all, sty.div318)}
-                      >
-                        <div
-                          data-plasmic-name={"buy2Get5"}
-                          data-plasmic-override={overrides.buy2Get5}
-                          className={classNames(projectcss.all, sty.buy2Get5)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__eUnza
-                            )}
-                          >
-                            {"BUY 2, Get 1"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"free5"}
-                          data-plasmic-override={overrides.free5}
-                          className={classNames(projectcss.all, sty.free5)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__iEcdg
-                            )}
-                          >
-                            {"Free"}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"div319"}
-                      data-plasmic-override={overrides.div319}
-                      className={classNames(projectcss.all, sty.div319)}
-                    >
-                      <div
-                        data-plasmic-name={"specialOffer3"}
-                        data-plasmic-override={overrides.specialOffer3}
-                        className={classNames(
-                          projectcss.all,
-                          sty.specialOffer3
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__hjIsn
-                          )}
-                        >
-                          {"special offer"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"freeVitaminAir3"}
-                        data-plasmic-override={overrides.freeVitaminAir3}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeVitaminAir3
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__rr92J
-                          )}
-                        >
-                          {"free vitamin air"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={
-                          "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3"
-                        }
-                        data-plasmic-override={
-                          overrides.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          sty.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__s7NbD
-                          )}
-                        >
-                          {
-                            "Money-Back Guarantee: Better Flavor & Harder Hits or Your Money Back."
-                          }
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"div320"}
-                        data-plasmic-override={overrides.div320}
-                        className={classNames(projectcss.all, sty.div320)}
-                      >
-                        <div
-                          data-plasmic-name={"chooseFlavor7"}
-                          data-plasmic-override={overrides.chooseFlavor7}
-                          className={classNames(
-                            projectcss.all,
-                            sty.chooseFlavor7
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__gKlga
-                            )}
-                          >
-                            {"Choose Flavor"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"div321"}
-                          data-plasmic-override={overrides.div321}
-                          className={classNames(projectcss.all, sty.div321)}
-                        >
-                          <p.PlasmicLink
-                            data-plasmic-name={"div322"}
-                            data-plasmic-override={overrides.div322}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div322
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788108:1,39394868748:1,39394817036:1?note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"div323"}
-                              data-plasmic-override={overrides.div323}
-                              className={classNames(projectcss.all, sty.div323)}
-                            >
-                              <div
-                                data-plasmic-name={"div324"}
-                                data-plasmic-override={overrides.div324}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div324
-                                )}
-                              />
-                            </div>
-
-                            <div
-                              data-plasmic-name={"strawberry11"}
-                              data-plasmic-override={overrides.strawberry11}
-                              className={classNames(
-                                projectcss.all,
-                                sty.strawberry11
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__r5Sog
-                                )}
-                              >
-                                {"Strawberry"}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-
-                          <p.PlasmicLink
-                            data-plasmic-name={"div325"}
-                            data-plasmic-override={overrides.div325}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div325
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788236:1,39394868940:1,39394817164:1?discount=FREE&note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"div326"}
-                              data-plasmic-override={overrides.div326}
-                              className={classNames(projectcss.all, sty.div326)}
-                            >
-                              <div
-                                data-plasmic-name={"div327"}
-                                data-plasmic-override={overrides.div327}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div327
-                                )}
-                              />
-                            </div>
-
-                            <div
-                              data-plasmic-name={"vanila5"}
-                              data-plasmic-override={overrides.vanila5}
-                              className={classNames(
-                                projectcss.all,
-                                sty.vanila5
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___133Im
-                                )}
-                              >
-                                {"Vanila"}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <_414BogoOffer
+                  data-plasmic-name={"_414BogoOffer"}
+                  data-plasmic-override={overrides._414BogoOffer}
+                  className={classNames("__wab_instance", sty._414BogoOffer)}
+                />
               </div>
 
               <p.Stack
@@ -10400,99 +9498,11 @@ function PlasmicDisposableInfo__RenderFunc(props: {
               data-plasmic-override={overrides._320Px}
               className={classNames(projectcss.all, sty._320Px)}
             >
-              <div
-                data-plasmic-name={"div176"}
-                data-plasmic-override={overrides.div176}
-                className={classNames(projectcss.all, sty.div176)}
-              >
-                <div
-                  data-plasmic-name={"div177"}
-                  data-plasmic-override={overrides.div177}
-                  className={classNames(projectcss.all, sty.div177)}
-                >
-                  <p.PlasmicLink
-                    data-plasmic-name={"label5"}
-                    data-plasmic-override={overrides.label5}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.label5
-                    )}
-                    component={Link}
-                    href={"#offer" as const}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fnSnF
-                      )}
-                    >
-                      {"CLAIM FREE DEVICE"}
-                    </div>
-                  </p.PlasmicLink>
-
-                  <div
-                    data-plasmic-name={
-                      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3"
-                    }
-                    data-plasmic-override={
-                      overrides.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      sty.specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mzsAr
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"SPECIAL OFFER: "}
-                        </span>
-                        <React.Fragment>
-                          {
-                            "Claim this one-time offer. Try Vitamin Air at a fraction of the regular price today."
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  </div>
-
-                  <div
-                    data-plasmic-name={"freeShipping5"}
-                    data-plasmic-override={overrides.freeShipping5}
-                    className={classNames(projectcss.all, sty.freeShipping5)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "smallestMobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___9Obto
-                        )}
-                      >
-                        {"+ Free Shipping"}
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              </div>
+              <Nav320CwOffer
+                data-plasmic-name={"nav320CwOffer"}
+                data-plasmic-override={overrides.nav320CwOffer}
+                className={classNames("__wab_instance", sty.nav320CwOffer)}
+              />
 
               <div
                 data-plasmic-name={"div178"}
@@ -15136,324 +14146,14 @@ function PlasmicDisposableInfo__RenderFunc(props: {
                   </div>
                 ) : null}
 
-                <div
-                  data-plasmic-name={"divprodarea4"}
-                  data-plasmic-override={overrides.divprodarea4}
-                  className={classNames(projectcss.all, sty.divprodarea4)}
-                  id={"offer" as const}
-                >
-                  <div
-                    data-plasmic-name={"div302"}
-                    data-plasmic-override={overrides.div302}
-                    className={classNames(projectcss.all, sty.div302)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "smallestMobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        data-plasmic-name={"aget23"}
-                        data-plasmic-override={overrides.aget23}
-                        className={classNames(projectcss.all, sty.aget23)}
-                      >
-                        <div
-                          data-plasmic-name={"feelTheDifference2"}
-                          data-plasmic-override={overrides.feelTheDifference2}
-                          className={classNames(
-                            projectcss.all,
-                            sty.feelTheDifference2
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__nAa3Q
-                            )}
-                          >
-                            {"FEEL THE DIFFERENCE"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"fingericonpng4"}
-                          data-plasmic-override={overrides.fingericonpng4}
-                          className={classNames(
-                            projectcss.all,
-                            sty.fingericonpng4
-                          )}
-                        />
-                      </div>
-                    ) : null}
-
-                    <div
-                      data-plasmic-name={"paymentcardpng4"}
-                      data-plasmic-override={overrides.paymentcardpng4}
-                      className={classNames(
-                        projectcss.all,
-                        sty.paymentcardpng4
-                      )}
-                    />
-                  </div>
-
-                  <div
-                    data-plasmic-name={"div303"}
-                    data-plasmic-override={overrides.div303}
-                    className={classNames(projectcss.all, sty.div303)}
-                  >
-                    <div
-                      data-plasmic-name={"div304"}
-                      data-plasmic-override={overrides.div304}
-                      className={classNames(projectcss.all, sty.div304)}
-                    >
-                      <div
-                        data-plasmic-name={"prodimagepng4"}
-                        data-plasmic-override={overrides.prodimagepng4}
-                        className={classNames(
-                          projectcss.all,
-                          sty.prodimagepng4
-                        )}
-                      />
-
-                      <div
-                        data-plasmic-name={"div305"}
-                        data-plasmic-override={overrides.div305}
-                        className={classNames(projectcss.all, sty.div305)}
-                      >
-                        <div
-                          data-plasmic-name={"buy2Get4"}
-                          data-plasmic-override={overrides.buy2Get4}
-                          className={classNames(projectcss.all, sty.buy2Get4)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__qXpl9
-                            )}
-                          >
-                            {"BUY 2, Get 1"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"free4"}
-                          data-plasmic-override={overrides.free4}
-                          className={classNames(projectcss.all, sty.free4)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__c12Y
-                            )}
-                          >
-                            {"Free"}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"div306"}
-                      data-plasmic-override={overrides.div306}
-                      className={classNames(projectcss.all, sty.div306)}
-                    >
-                      <div
-                        data-plasmic-name={"specialOffer2"}
-                        data-plasmic-override={overrides.specialOffer2}
-                        className={classNames(
-                          projectcss.all,
-                          sty.specialOffer2
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__htf8S
-                          )}
-                        >
-                          {"special offer"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"freeVitaminAir2"}
-                        data-plasmic-override={overrides.freeVitaminAir2}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeVitaminAir2
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__f6Svr
-                          )}
-                        >
-                          {"free vitamin air"}
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={
-                          "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2"
-                        }
-                        data-plasmic-override={
-                          overrides.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          sty.moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___3Uapx
-                          )}
-                        >
-                          {
-                            "Money-Back Guarantee: Better Flavor & Harder Hits or Your Money Back."
-                          }
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"div307"}
-                        data-plasmic-override={overrides.div307}
-                        className={classNames(projectcss.all, sty.div307)}
-                      >
-                        <div
-                          data-plasmic-name={"chooseFlavor6"}
-                          data-plasmic-override={overrides.chooseFlavor6}
-                          className={classNames(
-                            projectcss.all,
-                            sty.chooseFlavor6
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__iJmP6
-                            )}
-                          >
-                            {"Choose Flavor"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"div308"}
-                          data-plasmic-override={overrides.div308}
-                          className={classNames(projectcss.all, sty.div308)}
-                        >
-                          <p.PlasmicLink
-                            data-plasmic-name={"div309"}
-                            data-plasmic-override={overrides.div309}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div309
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788108:1,39394868748:1,39394817036:1?note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"div310"}
-                              data-plasmic-override={overrides.div310}
-                              className={classNames(projectcss.all, sty.div310)}
-                            >
-                              <div
-                                data-plasmic-name={"div311"}
-                                data-plasmic-override={overrides.div311}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div311
-                                )}
-                              />
-                            </div>
-
-                            <div
-                              data-plasmic-name={"strawberry10"}
-                              data-plasmic-override={overrides.strawberry10}
-                              className={classNames(
-                                projectcss.all,
-                                sty.strawberry10
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__qGqs
-                                )}
-                              >
-                                {"Strawberry"}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-
-                          <p.PlasmicLink
-                            data-plasmic-name={"div312"}
-                            data-plasmic-override={overrides.div312}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.div312
-                            )}
-                            component={Link}
-                            href={
-                              "https://shop.lifehacksplus.com/discount/FREE?redirect=/cart/39394788236:1,39394868940:1,39394817164:1?discount=FREE&note=LHP-cw-offer-widget" as const
-                            }
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"div313"}
-                              data-plasmic-override={overrides.div313}
-                              className={classNames(projectcss.all, sty.div313)}
-                            >
-                              <div
-                                data-plasmic-name={"div314"}
-                                data-plasmic-override={overrides.div314}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.div314
-                                )}
-                              />
-                            </div>
-
-                            <div
-                              data-plasmic-name={"vanila4"}
-                              data-plasmic-override={overrides.vanila4}
-                              className={classNames(
-                                projectcss.all,
-                                sty.vanila4
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__ytMhz
-                                )}
-                              >
-                                {"Vanila"}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <_320PxCwOfferBogo
+                  data-plasmic-name={"_320PxCwOfferBogo"}
+                  data-plasmic-override={overrides._320PxCwOfferBogo}
+                  className={classNames(
+                    "__wab_instance",
+                    sty._320PxCwOfferBogo
+                  )}
+                />
               </div>
 
               <p.Stack
@@ -15765,13 +14465,9 @@ const PlasmicDescendants = {
   root: [
     "root",
     "_1440Px",
-    "div",
-    "div2",
-    "label",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday",
-    "freeShipping",
-    "div3",
-    "div4",
+    "nav1440CwOffer",
+    "hero",
+    "heroText",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png",
     "h1",
     "vitaminAirIsTheOnly",
@@ -15800,14 +14496,14 @@ const PlasmicDescendants = {
     "div7",
     "bannerrevE286F02653C5463D95E17D983A6A0996Png",
     "div8",
-    "ul2",
+    "press",
     "asFeaturedIn",
     "_5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png",
     "_800PxIndiegogoLogo87E824Db34F744159219Ab56Dca36549Png",
     "_1200PxScientificAmericanLogosvg9440Dc46Eee24228B6A5E91E5B0C8581Png",
     "asfeaturedin49Bda2Aea3Ea94D3CBd4F7D2Ad76Ae608Png",
     "entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png",
-    "div9",
+    "steps",
     "confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png",
     "div10",
     "inhaleWithConfidence",
@@ -15828,7 +14524,7 @@ const PlasmicDescendants = {
     "div17",
     "_3",
     "exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway",
-    "div18",
+    "headingSection",
     "div19",
     "formulatedWithZeroNic",
     "h22",
@@ -15856,7 +14552,7 @@ const PlasmicDescendants = {
     "handsvg2",
     "paymentlogo40976E39C5C646C8Be427D059A418536Png",
     "sparqBoxAnimationLoopShorterVersiongif",
-    "div23",
+    "formulation",
     "div24",
     "div25",
     "organicVegetableGlycerinAndNaturalFlavors",
@@ -15890,7 +14586,7 @@ const PlasmicDescendants = {
     "myProject4Png",
     "acaiBerry",
     "metabolismBooster",
-    "div34",
+    "values",
     "promissory700Cba5AB8264B5C8106987450146E3Bpng",
     "promissorylayerpng",
     "div35",
@@ -15920,7 +14616,7 @@ const PlasmicDescendants = {
     "getYoursNow3",
     "handsvg3",
     "paymentlogo40976E39C5C646C8Be427D059A418536Png2",
-    "div44",
+    "reviews",
     "div45",
     "customerReviews",
     "dontJustTakeOurWordForIt",
@@ -15960,7 +14656,7 @@ const PlasmicDescendants = {
     "verifiedBuyer3",
     "leftarrpng",
     "rightarrpng",
-    "div53",
+    "guarantee",
     "group8Png",
     "div54",
     "satisfactionGuarantee",
@@ -15975,7 +14671,7 @@ const PlasmicDescendants = {
     "getYoursNow4",
     "handsvg4",
     "paymentlogopng2",
-    "div56",
+    "qa",
     "div57",
     "h23",
     "questions",
@@ -16008,7 +14704,7 @@ const PlasmicDescendants = {
     "div70",
     "whatMaterialsIsSparqMadeFrom",
     "ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery",
-    "divgetyourvitamin",
+    "offer",
     "div63",
     "div64",
     "getYourVitaminAirToday",
@@ -16017,44 +14713,14 @@ const PlasmicDescendants = {
     "_485BasedOn1000Reviews6",
     "_0Nic100FlavorLabTestedVitaminsRecyclable",
     "div65",
-    "divprodarea",
-    "div71",
-    "div72",
-    "prodimagepng",
-    "div73",
-    "buy2Get1",
-    "free",
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng",
-    "div92",
+    "disposableBogoOffer1440Px",
+    "footer",
     "div93",
     "_2022CopyrightBySparq",
     "sparqLogoFinal0311Png",
     "privacyPolicyTermsConditions",
     "_414Px",
-    "div91",
-    "div94",
-    "label4",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2",
-    "freeShipping4",
+    "nav414CwOffer",
     "div95",
     "div96",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2",
@@ -16403,33 +15069,7 @@ const PlasmicDescendants = {
     "aget2",
     "fingericonpng2",
     "paymentcardpng2",
-    "divprodarea5",
-    "div315",
-    "aget24",
-    "feelTheDifference3",
-    "fingericonpng5",
-    "paymentcardpng5",
-    "div316",
-    "div317",
-    "prodimagepng5",
-    "div318",
-    "buy2Get5",
-    "free5",
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5",
+    "_414BogoOffer",
     "divshopifySectionLpg12Footer",
     "figmaPaste2",
     "div266",
@@ -16444,11 +15084,7 @@ const PlasmicDescendants = {
     "_2022CopyrightBySparq2",
     "privacyPolicyTermsConditions2",
     "_320Px",
-    "div176",
-    "div177",
-    "label5",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3",
-    "freeShipping5",
+    "nav320CwOffer",
     "div178",
     "div179",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png3",
@@ -16797,33 +15433,7 @@ const PlasmicDescendants = {
     "aget22",
     "fingericonpng3",
     "paymentcardpng3",
-    "divprodarea4",
-    "div302",
-    "aget23",
-    "feelTheDifference2",
-    "fingericonpng4",
-    "paymentcardpng4",
-    "div303",
-    "div304",
-    "prodimagepng4",
-    "div305",
-    "buy2Get4",
-    "free4",
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4",
+    "_320PxCwOfferBogo",
     "divshopifySectionLpg12Footer2",
     "div263",
     "div264",
@@ -16843,13 +15453,9 @@ const PlasmicDescendants = {
   ],
   _1440Px: [
     "_1440Px",
-    "div",
-    "div2",
-    "label",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday",
-    "freeShipping",
-    "div3",
-    "div4",
+    "nav1440CwOffer",
+    "hero",
+    "heroText",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png",
     "h1",
     "vitaminAirIsTheOnly",
@@ -16878,14 +15484,14 @@ const PlasmicDescendants = {
     "div7",
     "bannerrevE286F02653C5463D95E17D983A6A0996Png",
     "div8",
-    "ul2",
+    "press",
     "asFeaturedIn",
     "_5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png",
     "_800PxIndiegogoLogo87E824Db34F744159219Ab56Dca36549Png",
     "_1200PxScientificAmericanLogosvg9440Dc46Eee24228B6A5E91E5B0C8581Png",
     "asfeaturedin49Bda2Aea3Ea94D3CBd4F7D2Ad76Ae608Png",
     "entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png",
-    "div9",
+    "steps",
     "confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png",
     "div10",
     "inhaleWithConfidence",
@@ -16906,7 +15512,7 @@ const PlasmicDescendants = {
     "div17",
     "_3",
     "exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway",
-    "div18",
+    "headingSection",
     "div19",
     "formulatedWithZeroNic",
     "h22",
@@ -16934,7 +15540,7 @@ const PlasmicDescendants = {
     "handsvg2",
     "paymentlogo40976E39C5C646C8Be427D059A418536Png",
     "sparqBoxAnimationLoopShorterVersiongif",
-    "div23",
+    "formulation",
     "div24",
     "div25",
     "organicVegetableGlycerinAndNaturalFlavors",
@@ -16968,7 +15574,7 @@ const PlasmicDescendants = {
     "myProject4Png",
     "acaiBerry",
     "metabolismBooster",
-    "div34",
+    "values",
     "promissory700Cba5AB8264B5C8106987450146E3Bpng",
     "promissorylayerpng",
     "div35",
@@ -16998,7 +15604,7 @@ const PlasmicDescendants = {
     "getYoursNow3",
     "handsvg3",
     "paymentlogo40976E39C5C646C8Be427D059A418536Png2",
-    "div44",
+    "reviews",
     "div45",
     "customerReviews",
     "dontJustTakeOurWordForIt",
@@ -17038,7 +15644,7 @@ const PlasmicDescendants = {
     "verifiedBuyer3",
     "leftarrpng",
     "rightarrpng",
-    "div53",
+    "guarantee",
     "group8Png",
     "div54",
     "satisfactionGuarantee",
@@ -17053,7 +15659,7 @@ const PlasmicDescendants = {
     "getYoursNow4",
     "handsvg4",
     "paymentlogopng2",
-    "div56",
+    "qa",
     "div57",
     "h23",
     "questions",
@@ -17086,7 +15692,7 @@ const PlasmicDescendants = {
     "div70",
     "whatMaterialsIsSparqMadeFrom",
     "ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery",
-    "divgetyourvitamin",
+    "offer",
     "div63",
     "div64",
     "getYourVitaminAirToday",
@@ -17095,61 +15701,17 @@ const PlasmicDescendants = {
     "_485BasedOn1000Reviews6",
     "_0Nic100FlavorLabTestedVitaminsRecyclable",
     "div65",
-    "divprodarea",
-    "div71",
-    "div72",
-    "prodimagepng",
-    "div73",
-    "buy2Get1",
-    "free",
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng",
-    "div92",
+    "disposableBogoOffer1440Px",
+    "footer",
     "div93",
     "_2022CopyrightBySparq",
     "sparqLogoFinal0311Png",
     "privacyPolicyTermsConditions"
   ],
-  div: [
-    "div",
-    "div2",
-    "label",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday",
-    "freeShipping"
-  ],
-  div2: [
-    "div2",
-    "label",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday",
-    "freeShipping"
-  ],
-  label: ["label"],
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday:
-    [
-      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday"
-    ],
-  freeShipping: ["freeShipping"],
-  div3: [
-    "div3",
-    "div4",
+  nav1440CwOffer: ["nav1440CwOffer"],
+  hero: [
+    "hero",
+    "heroText",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png",
     "h1",
     "vitaminAirIsTheOnly",
@@ -17179,8 +15741,8 @@ const PlasmicDescendants = {
     "bannerrevE286F02653C5463D95E17D983A6A0996Png",
     "div8"
   ],
-  div4: [
-    "div4",
+  heroText: [
+    "heroText",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png",
     "h1",
     "vitaminAirIsTheOnly",
@@ -17279,8 +15841,8 @@ const PlasmicDescendants = {
     "bannerrevE286F02653C5463D95E17D983A6A0996Png"
   ],
   div8: ["div8"],
-  ul2: [
-    "ul2",
+  press: [
+    "press",
     "asFeaturedIn",
     "_5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png",
     "_800PxIndiegogoLogo87E824Db34F744159219Ab56Dca36549Png",
@@ -17304,8 +15866,8 @@ const PlasmicDescendants = {
   entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png: [
     "entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png"
   ],
-  div9: [
-    "div9",
+  steps: [
+    "steps",
     "confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png",
     "div10",
     "inhaleWithConfidence",
@@ -17399,8 +15961,8 @@ const PlasmicDescendants = {
   exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway: [
     "exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway"
   ],
-  div18: [
-    "div18",
+  headingSection: [
+    "headingSection",
     "div19",
     "formulatedWithZeroNic",
     "h22",
@@ -17550,8 +16112,8 @@ const PlasmicDescendants = {
   sparqBoxAnimationLoopShorterVersiongif: [
     "sparqBoxAnimationLoopShorterVersiongif"
   ],
-  div23: [
-    "div23",
+  formulation: [
+    "formulation",
     "div24",
     "div25",
     "organicVegetableGlycerinAndNaturalFlavors",
@@ -17691,8 +16253,8 @@ const PlasmicDescendants = {
   myProject4Png: ["myProject4Png"],
   acaiBerry: ["acaiBerry"],
   metabolismBooster: ["metabolismBooster"],
-  div34: [
-    "div34",
+  values: [
+    "values",
     "promissory700Cba5AB8264B5C8106987450146E3Bpng",
     "promissorylayerpng",
     "div35",
@@ -17855,8 +16417,8 @@ const PlasmicDescendants = {
   paymentlogo40976E39C5C646C8Be427D059A418536Png2: [
     "paymentlogo40976E39C5C646C8Be427D059A418536Png2"
   ],
-  div44: [
-    "div44",
+  reviews: [
+    "reviews",
     "div45",
     "customerReviews",
     "dontJustTakeOurWordForIt",
@@ -18064,8 +16626,8 @@ const PlasmicDescendants = {
   verifiedBuyer3: ["verifiedBuyer3"],
   leftarrpng: ["leftarrpng"],
   rightarrpng: ["rightarrpng"],
-  div53: [
-    "div53",
+  guarantee: [
+    "guarantee",
     "group8Png",
     "div54",
     "satisfactionGuarantee",
@@ -18104,8 +16666,8 @@ const PlasmicDescendants = {
   getYoursNow4: ["getYoursNow4"],
   handsvg4: ["handsvg4"],
   paymentlogopng2: ["paymentlogopng2"],
-  div56: [
-    "div56",
+  qa: [
+    "qa",
     "div57",
     "h23",
     "questions",
@@ -18254,8 +16816,8 @@ const PlasmicDescendants = {
     [
       "ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery"
     ],
-  divgetyourvitamin: [
-    "divgetyourvitamin",
+  offer: [
+    "offer",
     "div63",
     "div64",
     "getYourVitaminAirToday",
@@ -18264,33 +16826,7 @@ const PlasmicDescendants = {
     "_485BasedOn1000Reviews6",
     "_0Nic100FlavorLabTestedVitaminsRecyclable",
     "div65",
-    "divprodarea",
-    "div71",
-    "div72",
-    "prodimagepng",
-    "div73",
-    "buy2Get1",
-    "free",
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng"
+    "disposableBogoOffer1440Px"
   ],
   div63: [
     "div63",
@@ -18318,141 +16854,9 @@ const PlasmicDescendants = {
     "_0Nic100FlavorLabTestedVitaminsRecyclable"
   ],
   div65: ["div65"],
-  divprodarea: [
-    "divprodarea",
-    "div71",
-    "div72",
-    "prodimagepng",
-    "div73",
-    "buy2Get1",
-    "free",
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng"
-  ],
-  div71: [
-    "div71",
-    "div72",
-    "prodimagepng",
-    "div73",
-    "buy2Get1",
-    "free",
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng"
-  ],
-  div72: ["div72", "prodimagepng", "div73", "buy2Get1", "free"],
-  prodimagepng: ["prodimagepng"],
-  div73: ["div73", "buy2Get1", "free"],
-  buy2Get1: ["buy2Get1"],
-  free: ["free"],
-  div74: [
-    "div74",
-    "specialOffer",
-    "freeVitaminAir",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack",
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila",
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng"
-  ],
-  specialOffer: ["specialOffer"],
-  freeVitaminAir: ["freeVitaminAir"],
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack: [
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack"
-  ],
-  div75: [
-    "div75",
-    "chooseFlavor",
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila"
-  ],
-  chooseFlavor: ["chooseFlavor"],
-  div76: [
-    "div76",
-    "div77",
-    "div78",
-    "div79",
-    "strawberry",
-    "div80",
-    "div81",
-    "div82",
-    "vanila"
-  ],
-  div77: ["div77", "div78", "div79", "strawberry"],
-  div78: ["div78", "div79"],
-  div79: ["div79"],
-  strawberry: ["strawberry"],
-  div80: ["div80", "div81", "div82", "vanila"],
-  div81: ["div81", "div82"],
-  div82: ["div82"],
-  vanila: ["vanila"],
-  div83: [
-    "div83",
-    "adifferance",
-    "feelTheDifference",
-    "fingericonpng",
-    "paymentcardpng"
-  ],
-  adifferance: ["adifferance", "feelTheDifference", "fingericonpng"],
-  feelTheDifference: ["feelTheDifference"],
-  fingericonpng: ["fingericonpng"],
-  paymentcardpng: ["paymentcardpng"],
-  div92: [
-    "div92",
+  disposableBogoOffer1440Px: ["disposableBogoOffer1440Px"],
+  footer: [
+    "footer",
     "div93",
     "_2022CopyrightBySparq",
     "sparqLogoFinal0311Png",
@@ -18469,11 +16873,7 @@ const PlasmicDescendants = {
   privacyPolicyTermsConditions: ["privacyPolicyTermsConditions"],
   _414Px: [
     "_414Px",
-    "div91",
-    "div94",
-    "label4",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2",
-    "freeShipping4",
+    "nav414CwOffer",
     "div95",
     "div96",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2",
@@ -18822,33 +17222,7 @@ const PlasmicDescendants = {
     "aget2",
     "fingericonpng2",
     "paymentcardpng2",
-    "divprodarea5",
-    "div315",
-    "aget24",
-    "feelTheDifference3",
-    "fingericonpng5",
-    "paymentcardpng5",
-    "div316",
-    "div317",
-    "prodimagepng5",
-    "div318",
-    "buy2Get5",
-    "free5",
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5",
+    "_414BogoOffer",
     "divshopifySectionLpg12Footer",
     "figmaPaste2",
     "div266",
@@ -18863,25 +17237,7 @@ const PlasmicDescendants = {
     "_2022CopyrightBySparq2",
     "privacyPolicyTermsConditions2"
   ],
-  div91: [
-    "div91",
-    "div94",
-    "label4",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2",
-    "freeShipping4"
-  ],
-  div94: [
-    "div94",
-    "label4",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2",
-    "freeShipping4"
-  ],
-  label4: ["label4"],
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2:
-    [
-      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2"
-    ],
-  freeShipping4: ["freeShipping4"],
+  nav414CwOffer: ["nav414CwOffer"],
   div95: [
     "div95",
     "div96",
@@ -19895,33 +18251,7 @@ const PlasmicDescendants = {
     "aget2",
     "fingericonpng2",
     "paymentcardpng2",
-    "divprodarea5",
-    "div315",
-    "aget24",
-    "feelTheDifference3",
-    "fingericonpng5",
-    "paymentcardpng5",
-    "div316",
-    "div317",
-    "prodimagepng5",
-    "div318",
-    "buy2Get5",
-    "free5",
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
+    "_414BogoOffer"
   ],
   div151: [
     "div151",
@@ -20834,129 +19164,7 @@ const PlasmicDescendants = {
   aget2: ["aget2", "fingericonpng2"],
   fingericonpng2: ["fingericonpng2"],
   paymentcardpng2: ["paymentcardpng2"],
-  divprodarea5: [
-    "divprodarea5",
-    "div315",
-    "aget24",
-    "feelTheDifference3",
-    "fingericonpng5",
-    "paymentcardpng5",
-    "div316",
-    "div317",
-    "prodimagepng5",
-    "div318",
-    "buy2Get5",
-    "free5",
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
-  ],
-  div315: [
-    "div315",
-    "aget24",
-    "feelTheDifference3",
-    "fingericonpng5",
-    "paymentcardpng5"
-  ],
-  aget24: ["aget24", "feelTheDifference3", "fingericonpng5"],
-  feelTheDifference3: ["feelTheDifference3"],
-  fingericonpng5: ["fingericonpng5"],
-  paymentcardpng5: ["paymentcardpng5"],
-  div316: [
-    "div316",
-    "div317",
-    "prodimagepng5",
-    "div318",
-    "buy2Get5",
-    "free5",
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
-  ],
-  div317: ["div317", "prodimagepng5", "div318", "buy2Get5", "free5"],
-  prodimagepng5: ["prodimagepng5"],
-  div318: ["div318", "buy2Get5", "free5"],
-  buy2Get5: ["buy2Get5"],
-  free5: ["free5"],
-  div319: [
-    "div319",
-    "specialOffer3",
-    "freeVitaminAir3",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3",
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
-  ],
-  specialOffer3: ["specialOffer3"],
-  freeVitaminAir3: ["freeVitaminAir3"],
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3: [
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3"
-  ],
-  div320: [
-    "div320",
-    "chooseFlavor7",
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
-  ],
-  chooseFlavor7: ["chooseFlavor7"],
-  div321: [
-    "div321",
-    "div322",
-    "div323",
-    "div324",
-    "strawberry11",
-    "div325",
-    "div326",
-    "div327",
-    "vanila5"
-  ],
-  div322: ["div322", "div323", "div324", "strawberry11"],
-  div323: ["div323", "div324"],
-  div324: ["div324"],
-  strawberry11: ["strawberry11"],
-  div325: ["div325", "div326", "div327", "vanila5"],
-  div326: ["div326", "div327"],
-  div327: ["div327"],
-  vanila5: ["vanila5"],
+  _414BogoOffer: ["_414BogoOffer"],
   divshopifySectionLpg12Footer: ["divshopifySectionLpg12Footer"],
   figmaPaste2: [
     "figmaPaste2",
@@ -20992,11 +19200,7 @@ const PlasmicDescendants = {
   privacyPolicyTermsConditions2: ["privacyPolicyTermsConditions2"],
   _320Px: [
     "_320Px",
-    "div176",
-    "div177",
-    "label5",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3",
-    "freeShipping5",
+    "nav320CwOffer",
     "div178",
     "div179",
     "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png3",
@@ -21345,33 +19549,7 @@ const PlasmicDescendants = {
     "aget22",
     "fingericonpng3",
     "paymentcardpng3",
-    "divprodarea4",
-    "div302",
-    "aget23",
-    "feelTheDifference2",
-    "fingericonpng4",
-    "paymentcardpng4",
-    "div303",
-    "div304",
-    "prodimagepng4",
-    "div305",
-    "buy2Get4",
-    "free4",
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4",
+    "_320PxCwOfferBogo",
     "divshopifySectionLpg12Footer2",
     "div263",
     "div264",
@@ -21389,25 +19567,7 @@ const PlasmicDescendants = {
     "div287",
     "div288"
   ],
-  div176: [
-    "div176",
-    "div177",
-    "label5",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3",
-    "freeShipping5"
-  ],
-  div177: [
-    "div177",
-    "label5",
-    "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3",
-    "freeShipping5"
-  ],
-  label5: ["label5"],
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3:
-    [
-      "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3"
-    ],
-  freeShipping5: ["freeShipping5"],
+  nav320CwOffer: ["nav320CwOffer"],
   div178: [
     "div178",
     "div179",
@@ -22423,33 +20583,7 @@ const PlasmicDescendants = {
     "aget22",
     "fingericonpng3",
     "paymentcardpng3",
-    "divprodarea4",
-    "div302",
-    "aget23",
-    "feelTheDifference2",
-    "fingericonpng4",
-    "paymentcardpng4",
-    "div303",
-    "div304",
-    "prodimagepng4",
-    "div305",
-    "buy2Get4",
-    "free4",
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
+    "_320PxCwOfferBogo"
   ],
   div234: [
     "div234",
@@ -23362,129 +21496,7 @@ const PlasmicDescendants = {
   aget22: ["aget22", "fingericonpng3"],
   fingericonpng3: ["fingericonpng3"],
   paymentcardpng3: ["paymentcardpng3"],
-  divprodarea4: [
-    "divprodarea4",
-    "div302",
-    "aget23",
-    "feelTheDifference2",
-    "fingericonpng4",
-    "paymentcardpng4",
-    "div303",
-    "div304",
-    "prodimagepng4",
-    "div305",
-    "buy2Get4",
-    "free4",
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
-  ],
-  div302: [
-    "div302",
-    "aget23",
-    "feelTheDifference2",
-    "fingericonpng4",
-    "paymentcardpng4"
-  ],
-  aget23: ["aget23", "feelTheDifference2", "fingericonpng4"],
-  feelTheDifference2: ["feelTheDifference2"],
-  fingericonpng4: ["fingericonpng4"],
-  paymentcardpng4: ["paymentcardpng4"],
-  div303: [
-    "div303",
-    "div304",
-    "prodimagepng4",
-    "div305",
-    "buy2Get4",
-    "free4",
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
-  ],
-  div304: ["div304", "prodimagepng4", "div305", "buy2Get4", "free4"],
-  prodimagepng4: ["prodimagepng4"],
-  div305: ["div305", "buy2Get4", "free4"],
-  buy2Get4: ["buy2Get4"],
-  free4: ["free4"],
-  div306: [
-    "div306",
-    "specialOffer2",
-    "freeVitaminAir2",
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2",
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
-  ],
-  specialOffer2: ["specialOffer2"],
-  freeVitaminAir2: ["freeVitaminAir2"],
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2: [
-    "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2"
-  ],
-  div307: [
-    "div307",
-    "chooseFlavor6",
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
-  ],
-  chooseFlavor6: ["chooseFlavor6"],
-  div308: [
-    "div308",
-    "div309",
-    "div310",
-    "div311",
-    "strawberry10",
-    "div312",
-    "div313",
-    "div314",
-    "vanila4"
-  ],
-  div309: ["div309", "div310", "div311", "strawberry10"],
-  div310: ["div310", "div311"],
-  div311: ["div311"],
-  strawberry10: ["strawberry10"],
-  div312: ["div312", "div313", "div314", "vanila4"],
-  div313: ["div313", "div314"],
-  div314: ["div314"],
-  vanila4: ["vanila4"],
+  _320PxCwOfferBogo: ["_320PxCwOfferBogo"],
   divshopifySectionLpg12Footer2: [
     "divshopifySectionLpg12Footer2",
     "div263",
@@ -23539,13 +21551,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   _1440Px: "div";
-  div: "div";
-  div2: "div";
-  label: "a";
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday: "div";
-  freeShipping: "div";
-  div3: "div";
-  div4: "div";
+  nav1440CwOffer: typeof Nav1440CwOffer;
+  hero: "div";
+  heroText: "div";
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png: "a";
   h1: "div";
   vitaminAirIsTheOnly: "div";
@@ -23574,14 +21582,14 @@ type NodeDefaultElementType = {
   div7: "div";
   bannerrevE286F02653C5463D95E17D983A6A0996Png: "div";
   div8: "div";
-  ul2: "div";
+  press: "div";
   asFeaturedIn: "div";
   _5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png: "div";
   _800PxIndiegogoLogo87E824Db34F744159219Ab56Dca36549Png: "div";
   _1200PxScientificAmericanLogosvg9440Dc46Eee24228B6A5E91E5B0C8581Png: "div";
   asfeaturedin49Bda2Aea3Ea94D3CBd4F7D2Ad76Ae608Png: "div";
   entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png: "div";
-  div9: "div";
+  steps: "div";
   confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png: "div";
   div10: "div";
   inhaleWithConfidence: "div";
@@ -23602,7 +21610,7 @@ type NodeDefaultElementType = {
   div17: "div";
   _3: "div";
   exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway: "div";
-  div18: "div";
+  headingSection: "div";
   div19: "div";
   formulatedWithZeroNic: "div";
   h22: "div";
@@ -23630,7 +21638,7 @@ type NodeDefaultElementType = {
   handsvg2: "div";
   paymentlogo40976E39C5C646C8Be427D059A418536Png: "div";
   sparqBoxAnimationLoopShorterVersiongif: "div";
-  div23: "div";
+  formulation: "div";
   div24: "div";
   div25: "div";
   organicVegetableGlycerinAndNaturalFlavors: "div";
@@ -23664,7 +21672,7 @@ type NodeDefaultElementType = {
   myProject4Png: "div";
   acaiBerry: "div";
   metabolismBooster: "div";
-  div34: "div";
+  values: "div";
   promissory700Cba5AB8264B5C8106987450146E3Bpng: "div";
   promissorylayerpng: "div";
   div35: "div";
@@ -23694,7 +21702,7 @@ type NodeDefaultElementType = {
   getYoursNow3: "div";
   handsvg3: "div";
   paymentlogo40976E39C5C646C8Be427D059A418536Png2: "div";
-  div44: "div";
+  reviews: "div";
   div45: "div";
   customerReviews: "div";
   dontJustTakeOurWordForIt: "div";
@@ -23734,7 +21742,7 @@ type NodeDefaultElementType = {
   verifiedBuyer3: "div";
   leftarrpng: "div";
   rightarrpng: "div";
-  div53: "div";
+  guarantee: "div";
   group8Png: "div";
   div54: "div";
   satisfactionGuarantee: "div";
@@ -23749,7 +21757,7 @@ type NodeDefaultElementType = {
   getYoursNow4: "div";
   handsvg4: "div";
   paymentlogopng2: "div";
-  div56: "div";
+  qa: "div";
   div57: "div";
   h23: "div";
   questions: "div";
@@ -23782,7 +21790,7 @@ type NodeDefaultElementType = {
   div70: "div";
   whatMaterialsIsSparqMadeFrom: "div";
   ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery: "div";
-  divgetyourvitamin: "div";
+  offer: "div";
   div63: "div";
   div64: "div";
   getYourVitaminAirToday: "div";
@@ -23791,44 +21799,14 @@ type NodeDefaultElementType = {
   _485BasedOn1000Reviews6: "div";
   _0Nic100FlavorLabTestedVitaminsRecyclable: "div";
   div65: "div";
-  divprodarea: "div";
-  div71: "div";
-  div72: "div";
-  prodimagepng: "div";
-  div73: "div";
-  buy2Get1: "div";
-  free: "div";
-  div74: "div";
-  specialOffer: "div";
-  freeVitaminAir: "div";
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack: "div";
-  div75: "div";
-  chooseFlavor: "div";
-  div76: "div";
-  div77: "a";
-  div78: "div";
-  div79: "div";
-  strawberry: "div";
-  div80: "a";
-  div81: "div";
-  div82: "div";
-  vanila: "div";
-  div83: "div";
-  adifferance: "div";
-  feelTheDifference: "div";
-  fingericonpng: "div";
-  paymentcardpng: "div";
-  div92: "div";
+  disposableBogoOffer1440Px: typeof DisposableBogoOffer1440Px;
+  footer: "div";
   div93: "div";
   _2022CopyrightBySparq: "div";
   sparqLogoFinal0311Png: "a";
   privacyPolicyTermsConditions: "div";
   _414Px: "div";
-  div91: "div";
-  div94: "div";
-  label4: "a";
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2: "div";
-  freeShipping4: "div";
+  nav414CwOffer: typeof Nav414CwOffer;
   div95: "div";
   div96: "div";
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2: "a";
@@ -24177,33 +22155,7 @@ type NodeDefaultElementType = {
   aget2: "div";
   fingericonpng2: "div";
   paymentcardpng2: "div";
-  divprodarea5: "div";
-  div315: "div";
-  aget24: "div";
-  feelTheDifference3: "div";
-  fingericonpng5: "div";
-  paymentcardpng5: "div";
-  div316: "div";
-  div317: "div";
-  prodimagepng5: "div";
-  div318: "div";
-  buy2Get5: "div";
-  free5: "div";
-  div319: "div";
-  specialOffer3: "div";
-  freeVitaminAir3: "div";
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3: "div";
-  div320: "div";
-  chooseFlavor7: "div";
-  div321: "div";
-  div322: "a";
-  div323: "div";
-  div324: "div";
-  strawberry11: "div";
-  div325: "a";
-  div326: "div";
-  div327: "div";
-  vanila5: "div";
+  _414BogoOffer: typeof _414BogoOffer;
   divshopifySectionLpg12Footer: "div";
   figmaPaste2: "div";
   div266: "div";
@@ -24218,11 +22170,7 @@ type NodeDefaultElementType = {
   _2022CopyrightBySparq2: "div";
   privacyPolicyTermsConditions2: "div";
   _320Px: "div";
-  div176: "div";
-  div177: "div";
-  label5: "a";
-  specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3: "div";
-  freeShipping5: "div";
+  nav320CwOffer: typeof Nav320CwOffer;
   div178: "div";
   div179: "div";
   sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png3: "a";
@@ -24571,33 +22519,7 @@ type NodeDefaultElementType = {
   aget22: "div";
   fingericonpng3: "div";
   paymentcardpng3: "div";
-  divprodarea4: "div";
-  div302: "div";
-  aget23: "div";
-  feelTheDifference2: "div";
-  fingericonpng4: "div";
-  paymentcardpng4: "div";
-  div303: "div";
-  div304: "div";
-  prodimagepng4: "div";
-  div305: "div";
-  buy2Get4: "div";
-  free4: "div";
-  div306: "div";
-  specialOffer2: "div";
-  freeVitaminAir2: "div";
-  moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2: "div";
-  div307: "div";
-  chooseFlavor6: "div";
-  div308: "div";
-  div309: "a";
-  div310: "div";
-  div311: "div";
-  strawberry10: "div";
-  div312: "a";
-  div313: "div";
-  div314: "div";
-  vanila4: "div";
+  _320PxCwOfferBogo: typeof _320PxCwOfferBogo;
   divshopifySectionLpg12Footer2: "div";
   div263: "div";
   div264: "div";
@@ -24678,16 +22600,9 @@ export const PlasmicDisposableInfo = Object.assign(
   {
     // Helper components rendering sub-elements
     _1440Px: makeNodeComponent("_1440Px"),
-    div: makeNodeComponent("div"),
-    div2: makeNodeComponent("div2"),
-    label: makeNodeComponent("label"),
-    specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday:
-      makeNodeComponent(
-        "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday"
-      ),
-    freeShipping: makeNodeComponent("freeShipping"),
-    div3: makeNodeComponent("div3"),
-    div4: makeNodeComponent("div4"),
+    nav1440CwOffer: makeNodeComponent("nav1440CwOffer"),
+    hero: makeNodeComponent("hero"),
+    heroText: makeNodeComponent("heroText"),
     sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png:
       makeNodeComponent(
         "sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png"
@@ -24730,7 +22645,7 @@ export const PlasmicDisposableInfo = Object.assign(
       "bannerrevE286F02653C5463D95E17D983A6A0996Png"
     ),
     div8: makeNodeComponent("div8"),
-    ul2: makeNodeComponent("ul2"),
+    press: makeNodeComponent("press"),
     asFeaturedIn: makeNodeComponent("asFeaturedIn"),
     _5A18637B3A18271Ae9Cd636B177C5B2464F6C4A1DB6C85C4Eb7Fb4A85Png:
       makeNodeComponent(
@@ -24749,7 +22664,7 @@ export const PlasmicDisposableInfo = Object.assign(
     entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png: makeNodeComponent(
       "entrepreneurLogo484Ccefe4C854084Bc8C12Af7A590Ec0Png"
     ),
-    div9: makeNodeComponent("div9"),
+    steps: makeNodeComponent("steps"),
     confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png: makeNodeComponent(
       "confidenceeFdabb2F063604Ed78F96Dc94Bfa29F15Png"
     ),
@@ -24778,7 +22693,7 @@ export const PlasmicDisposableInfo = Object.assign(
     exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway: makeNodeComponent(
       "exhaleAndWatchTheUrgeToSmokeSlowlyDriftAway"
     ),
-    div18: makeNodeComponent("div18"),
+    headingSection: makeNodeComponent("headingSection"),
     div19: makeNodeComponent("div19"),
     formulatedWithZeroNic: makeNodeComponent("formulatedWithZeroNic"),
     h22: makeNodeComponent("h22"),
@@ -24832,7 +22747,7 @@ export const PlasmicDisposableInfo = Object.assign(
     sparqBoxAnimationLoopShorterVersiongif: makeNodeComponent(
       "sparqBoxAnimationLoopShorterVersiongif"
     ),
-    div23: makeNodeComponent("div23"),
+    formulation: makeNodeComponent("formulation"),
     div24: makeNodeComponent("div24"),
     div25: makeNodeComponent("div25"),
     organicVegetableGlycerinAndNaturalFlavors: makeNodeComponent(
@@ -24870,7 +22785,7 @@ export const PlasmicDisposableInfo = Object.assign(
     myProject4Png: makeNodeComponent("myProject4Png"),
     acaiBerry: makeNodeComponent("acaiBerry"),
     metabolismBooster: makeNodeComponent("metabolismBooster"),
-    div34: makeNodeComponent("div34"),
+    values: makeNodeComponent("values"),
     promissory700Cba5AB8264B5C8106987450146E3Bpng: makeNodeComponent(
       "promissory700Cba5AB8264B5C8106987450146E3Bpng"
     ),
@@ -24921,7 +22836,7 @@ export const PlasmicDisposableInfo = Object.assign(
     paymentlogo40976E39C5C646C8Be427D059A418536Png2: makeNodeComponent(
       "paymentlogo40976E39C5C646C8Be427D059A418536Png2"
     ),
-    div44: makeNodeComponent("div44"),
+    reviews: makeNodeComponent("reviews"),
     div45: makeNodeComponent("div45"),
     customerReviews: makeNodeComponent("customerReviews"),
     dontJustTakeOurWordForIt: makeNodeComponent("dontJustTakeOurWordForIt"),
@@ -24970,7 +22885,7 @@ export const PlasmicDisposableInfo = Object.assign(
     verifiedBuyer3: makeNodeComponent("verifiedBuyer3"),
     leftarrpng: makeNodeComponent("leftarrpng"),
     rightarrpng: makeNodeComponent("rightarrpng"),
-    div53: makeNodeComponent("div53"),
+    guarantee: makeNodeComponent("guarantee"),
     group8Png: makeNodeComponent("group8Png"),
     div54: makeNodeComponent("div54"),
     satisfactionGuarantee: makeNodeComponent("satisfactionGuarantee"),
@@ -24985,7 +22900,7 @@ export const PlasmicDisposableInfo = Object.assign(
     getYoursNow4: makeNodeComponent("getYoursNow4"),
     handsvg4: makeNodeComponent("handsvg4"),
     paymentlogopng2: makeNodeComponent("paymentlogopng2"),
-    div56: makeNodeComponent("div56"),
+    qa: makeNodeComponent("qa"),
     div57: makeNodeComponent("div57"),
     h23: makeNodeComponent("h23"),
     questions: makeNodeComponent("questions"),
@@ -25037,7 +22952,7 @@ export const PlasmicDisposableInfo = Object.assign(
       makeNodeComponent(
         "ourSparqVitaminAirIs100RecyclableItIsMadeOfABiodegradableBodyOfWoodStainlessSteelAndFoodGradeSiliconeAndItsPoweredByALithiumBattery"
       ),
-    divgetyourvitamin: makeNodeComponent("divgetyourvitamin"),
+    offer: makeNodeComponent("offer"),
     div63: makeNodeComponent("div63"),
     div64: makeNodeComponent("div64"),
     getYourVitaminAirToday: makeNodeComponent("getYourVitaminAirToday"),
@@ -25048,36 +22963,8 @@ export const PlasmicDisposableInfo = Object.assign(
       "_0Nic100FlavorLabTestedVitaminsRecyclable"
     ),
     div65: makeNodeComponent("div65"),
-    divprodarea: makeNodeComponent("divprodarea"),
-    div71: makeNodeComponent("div71"),
-    div72: makeNodeComponent("div72"),
-    prodimagepng: makeNodeComponent("prodimagepng"),
-    div73: makeNodeComponent("div73"),
-    buy2Get1: makeNodeComponent("buy2Get1"),
-    free: makeNodeComponent("free"),
-    div74: makeNodeComponent("div74"),
-    specialOffer: makeNodeComponent("specialOffer"),
-    freeVitaminAir: makeNodeComponent("freeVitaminAir"),
-    moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack: makeNodeComponent(
-      "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack"
-    ),
-    div75: makeNodeComponent("div75"),
-    chooseFlavor: makeNodeComponent("chooseFlavor"),
-    div76: makeNodeComponent("div76"),
-    div77: makeNodeComponent("div77"),
-    div78: makeNodeComponent("div78"),
-    div79: makeNodeComponent("div79"),
-    strawberry: makeNodeComponent("strawberry"),
-    div80: makeNodeComponent("div80"),
-    div81: makeNodeComponent("div81"),
-    div82: makeNodeComponent("div82"),
-    vanila: makeNodeComponent("vanila"),
-    div83: makeNodeComponent("div83"),
-    adifferance: makeNodeComponent("adifferance"),
-    feelTheDifference: makeNodeComponent("feelTheDifference"),
-    fingericonpng: makeNodeComponent("fingericonpng"),
-    paymentcardpng: makeNodeComponent("paymentcardpng"),
-    div92: makeNodeComponent("div92"),
+    disposableBogoOffer1440Px: makeNodeComponent("disposableBogoOffer1440Px"),
+    footer: makeNodeComponent("footer"),
     div93: makeNodeComponent("div93"),
     _2022CopyrightBySparq: makeNodeComponent("_2022CopyrightBySparq"),
     sparqLogoFinal0311Png: makeNodeComponent("sparqLogoFinal0311Png"),
@@ -25085,14 +22972,7 @@ export const PlasmicDisposableInfo = Object.assign(
       "privacyPolicyTermsConditions"
     ),
     _414Px: makeNodeComponent("_414Px"),
-    div91: makeNodeComponent("div91"),
-    div94: makeNodeComponent("div94"),
-    label4: makeNodeComponent("label4"),
-    specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2:
-      makeNodeComponent(
-        "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday2"
-      ),
-    freeShipping4: makeNodeComponent("freeShipping4"),
+    nav414CwOffer: makeNodeComponent("nav414CwOffer"),
     div95: makeNodeComponent("div95"),
     div96: makeNodeComponent("div96"),
     sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png2:
@@ -25533,35 +23413,7 @@ export const PlasmicDisposableInfo = Object.assign(
     aget2: makeNodeComponent("aget2"),
     fingericonpng2: makeNodeComponent("fingericonpng2"),
     paymentcardpng2: makeNodeComponent("paymentcardpng2"),
-    divprodarea5: makeNodeComponent("divprodarea5"),
-    div315: makeNodeComponent("div315"),
-    aget24: makeNodeComponent("aget24"),
-    feelTheDifference3: makeNodeComponent("feelTheDifference3"),
-    fingericonpng5: makeNodeComponent("fingericonpng5"),
-    paymentcardpng5: makeNodeComponent("paymentcardpng5"),
-    div316: makeNodeComponent("div316"),
-    div317: makeNodeComponent("div317"),
-    prodimagepng5: makeNodeComponent("prodimagepng5"),
-    div318: makeNodeComponent("div318"),
-    buy2Get5: makeNodeComponent("buy2Get5"),
-    free5: makeNodeComponent("free5"),
-    div319: makeNodeComponent("div319"),
-    specialOffer3: makeNodeComponent("specialOffer3"),
-    freeVitaminAir3: makeNodeComponent("freeVitaminAir3"),
-    moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3: makeNodeComponent(
-      "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack3"
-    ),
-    div320: makeNodeComponent("div320"),
-    chooseFlavor7: makeNodeComponent("chooseFlavor7"),
-    div321: makeNodeComponent("div321"),
-    div322: makeNodeComponent("div322"),
-    div323: makeNodeComponent("div323"),
-    div324: makeNodeComponent("div324"),
-    strawberry11: makeNodeComponent("strawberry11"),
-    div325: makeNodeComponent("div325"),
-    div326: makeNodeComponent("div326"),
-    div327: makeNodeComponent("div327"),
-    vanila5: makeNodeComponent("vanila5"),
+    _414BogoOffer: makeNodeComponent("_414BogoOffer"),
     divshopifySectionLpg12Footer: makeNodeComponent(
       "divshopifySectionLpg12Footer"
     ),
@@ -25580,14 +23432,7 @@ export const PlasmicDisposableInfo = Object.assign(
       "privacyPolicyTermsConditions2"
     ),
     _320Px: makeNodeComponent("_320Px"),
-    div176: makeNodeComponent("div176"),
-    div177: makeNodeComponent("div177"),
-    label5: makeNodeComponent("label5"),
-    specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3:
-      makeNodeComponent(
-        "specialOfferClaimThisOneTimeOfferTryVitaminAirAtAFractionOfTheRegularPriceToday3"
-      ),
-    freeShipping5: makeNodeComponent("freeShipping5"),
+    nav320CwOffer: makeNodeComponent("nav320CwOffer"),
     div178: makeNodeComponent("div178"),
     div179: makeNodeComponent("div179"),
     sparqLogoFinal031RemovebgPreview3B7Bc87C264B43D389924155C29D48C3Png3:
@@ -26028,35 +23873,7 @@ export const PlasmicDisposableInfo = Object.assign(
     aget22: makeNodeComponent("aget22"),
     fingericonpng3: makeNodeComponent("fingericonpng3"),
     paymentcardpng3: makeNodeComponent("paymentcardpng3"),
-    divprodarea4: makeNodeComponent("divprodarea4"),
-    div302: makeNodeComponent("div302"),
-    aget23: makeNodeComponent("aget23"),
-    feelTheDifference2: makeNodeComponent("feelTheDifference2"),
-    fingericonpng4: makeNodeComponent("fingericonpng4"),
-    paymentcardpng4: makeNodeComponent("paymentcardpng4"),
-    div303: makeNodeComponent("div303"),
-    div304: makeNodeComponent("div304"),
-    prodimagepng4: makeNodeComponent("prodimagepng4"),
-    div305: makeNodeComponent("div305"),
-    buy2Get4: makeNodeComponent("buy2Get4"),
-    free4: makeNodeComponent("free4"),
-    div306: makeNodeComponent("div306"),
-    specialOffer2: makeNodeComponent("specialOffer2"),
-    freeVitaminAir2: makeNodeComponent("freeVitaminAir2"),
-    moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2: makeNodeComponent(
-      "moneyBackGuaranteeBetterFlavorHarderHitsOrYourMoneyBack2"
-    ),
-    div307: makeNodeComponent("div307"),
-    chooseFlavor6: makeNodeComponent("chooseFlavor6"),
-    div308: makeNodeComponent("div308"),
-    div309: makeNodeComponent("div309"),
-    div310: makeNodeComponent("div310"),
-    div311: makeNodeComponent("div311"),
-    strawberry10: makeNodeComponent("strawberry10"),
-    div312: makeNodeComponent("div312"),
-    div313: makeNodeComponent("div313"),
-    div314: makeNodeComponent("div314"),
-    vanila4: makeNodeComponent("vanila4"),
+    _320PxCwOfferBogo: makeNodeComponent("_320PxCwOfferBogo"),
     divshopifySectionLpg12Footer2: makeNodeComponent(
       "divshopifySectionLpg12Footer2"
     ),

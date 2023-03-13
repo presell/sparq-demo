@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -65,7 +65,6 @@ export type PlasmicHomepage__OverridesType = {
   form?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
   button?: p.Flex<typeof Button>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultHomepageProps {}
@@ -78,6 +77,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
   args: PlasmicHomepage__ArgsType;
@@ -86,6 +92,7 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -99,6 +106,20 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsbai21PvFaWEr()
@@ -209,8 +230,14 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-name={"textInput"}
                 data-plasmic-override={overrides.textInput}
                 className={classNames("__wab_instance", sty.textInput)}
+                onChange={(...eventArgs) => {
+                  p.generateStateOnChangeProp($state, ["textInput", "value"])(
+                    (e => e.target?.value).apply(null, eventArgs)
+                  );
+                }}
                 placeholder={"Enter Your Email Address" as const}
                 required={true}
+                value={p.generateStateValueProp($state, ["textInput", "value"])}
               />
 
               <Button
@@ -230,11 +257,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "img", "form", "textInput", "textbox", "button"],
-  section: ["section", "img", "form", "textInput", "textbox", "button"],
+  root: ["root", "section", "img", "form", "textInput", "button"],
+  section: ["section", "img", "form", "textInput", "button"],
   img: ["img"],
-  form: ["form", "textInput", "textbox", "button"],
-  textInput: ["textInput", "textbox"],
+  form: ["form", "textInput", "button"],
+  textInput: ["textInput"],
   button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;

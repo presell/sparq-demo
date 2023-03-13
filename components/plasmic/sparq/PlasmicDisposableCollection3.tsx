@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -751,7 +751,6 @@ export type PlasmicDisposableCollection3__OverridesType = {
   leads?: p.Flex<"section">;
   img?: p.Flex<typeof p.PlasmicImg>;
   textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultDisposableCollection3Props {}
@@ -764,6 +763,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicDisposableCollection3__RenderFunc(props: {
   variants: PlasmicDisposableCollection3__VariantsArgs;
   args: PlasmicDisposableCollection3__ArgsType;
@@ -772,6 +778,7 @@ function PlasmicDisposableCollection3__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -785,6 +792,20 @@ function PlasmicDisposableCollection3__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsbai21PvFaWEr()
@@ -10680,8 +10701,18 @@ function PlasmicDisposableCollection3__RenderFunc(props: {
                   data-plasmic-name={"textInput"}
                   data-plasmic-override={overrides.textInput}
                   className={classNames("__wab_instance", sty.textInput)}
+                  onChange={(...eventArgs) => {
+                    p.generateStateOnChangeProp($state, ["textInput", "value"])(
+                      (e => e.target?.value).apply(null, eventArgs)
+                    );
+                  }}
                   placeholder={"Enter Your Email Address" as const}
                   required={true}
+                  value={p.generateStateValueProp($state, [
+                    "textInput",
+
+                    "value"
+                  ])}
                 />
 
                 <Button
@@ -11370,8 +11401,7 @@ const PlasmicDescendants = {
     "svg17",
     "leads",
     "img",
-    "textInput",
-    "textbox"
+    "textInput"
   ],
   _440Px: [
     "_440Px",
@@ -17604,9 +17634,9 @@ const PlasmicDescendants = {
   sparqLogo125Xpng3: ["sparqLogo125Xpng3"],
   div230: ["div230", "svg17"],
   svg17: ["svg17"],
-  leads: ["leads", "img", "textInput", "textbox"],
+  leads: ["leads", "img", "textInput"],
   img: ["img"],
-  textInput: ["textInput", "textbox"]
+  textInput: ["textInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =

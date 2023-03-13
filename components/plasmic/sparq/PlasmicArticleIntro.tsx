@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -56,9 +56,9 @@ export const PlasmicArticleIntro__ArgProps = new Array<ArgPropType>();
 export type PlasmicArticleIntro__OverridesType = {
   headline?: p.Flex<"div">;
   button?: p.Flex<"button">;
-  reviews?: p.Flex<typeof Reviews>;
   columns?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
+  reviews?: p.Flex<typeof Reviews>;
 };
 
 export interface DefaultArticleIntroProps {
@@ -73,6 +73,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicArticleIntro__RenderFunc(props: {
   variants: PlasmicArticleIntro__VariantsArgs;
   args: PlasmicArticleIntro__ArgsType;
@@ -81,6 +88,7 @@ function PlasmicArticleIntro__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -125,6 +133,56 @@ function PlasmicArticleIntro__RenderFunc(props: {
           : "Hard Hitting Zero-Nic Pods Pack Intense Mango or Mint Flavor!"}
       </div>
 
+      <div
+        className={classNames(
+          projectcss.all,
+          projectcss.__wab_text,
+          sty.text__w0UJz
+        )}
+      >
+        {hasVariant(globalVariants, "screen", "desktopOnly") ? (
+          <React.Fragment>
+            <React.Fragment>
+              {"This new invention is turning \n"}
+            </React.Fragment>
+            <span
+              className={"plasmic_default__all plasmic_default__span"}
+              style={{ fontWeight: 700 }}
+            >
+              {"bad habits"}
+            </span>
+            <React.Fragment>{" into a "}</React.Fragment>
+            <span
+              className={"plasmic_default__all plasmic_default__span"}
+              style={{ fontWeight: 700 }}
+            >
+              {"healthy ones"}
+            </span>
+            <React.Fragment>{"..."}</React.Fragment>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <React.Fragment>
+              {"This new invention is turning \n"}
+            </React.Fragment>
+            <span
+              className={"plasmic_default__all plasmic_default__span"}
+              style={{ fontWeight: 700 }}
+            >
+              {"bad habits"}
+            </span>
+            <React.Fragment>{" into a "}</React.Fragment>
+            <span
+              className={"plasmic_default__all plasmic_default__span"}
+              style={{ fontWeight: 700 }}
+            >
+              {"healthy ones"}
+            </span>
+            <React.Fragment>{"..."}</React.Fragment>
+          </React.Fragment>
+        )}
+      </div>
+
       <button
         data-plasmic-name={"button"}
         data-plasmic-override={overrides.button}
@@ -140,39 +198,7 @@ function PlasmicArticleIntro__RenderFunc(props: {
         {"CLAIM FREE PODS 👉"}
       </button>
 
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__w0UJz
-        )}
-      >
-        <React.Fragment>
-          <React.Fragment>{"This new invention is turning \n"}</React.Fragment>
-          <span
-            className={"plasmic_default__all plasmic_default__span"}
-            style={{ fontWeight: 700 }}
-          >
-            {"bad habits"}
-          </span>
-          <React.Fragment>{" into a "}</React.Fragment>
-          <span
-            className={"plasmic_default__all plasmic_default__span"}
-            style={{ fontWeight: 700 }}
-          >
-            {"healthy ones"}
-          </span>
-          <React.Fragment>{"..."}</React.Fragment>
-        </React.Fragment>
-      </div>
-
-      <Reviews
-        data-plasmic-name={"reviews"}
-        data-plasmic-override={overrides.reviews}
-        className={classNames("__wab_instance", sty.reviews)}
-      />
-
-      {true ? (
+      {(hasVariant(globalVariants, "screen", "desktopOnly") ? true : true) ? (
         <div
           data-plasmic-name={"columns"}
           data-plasmic-override={overrides.columns}
@@ -213,16 +239,23 @@ function PlasmicArticleIntro__RenderFunc(props: {
           </div>
         </div>
       ) : null}
+      {(hasVariant(globalVariants, "screen", "desktopOnly") ? true : true) ? (
+        <Reviews
+          data-plasmic-name={"reviews"}
+          data-plasmic-override={overrides.reviews}
+          className={classNames("__wab_instance", sty.reviews)}
+        />
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  headline: ["headline", "button", "reviews", "columns", "img"],
+  headline: ["headline", "button", "columns", "img", "reviews"],
   button: ["button"],
-  reviews: ["reviews"],
   columns: ["columns", "img"],
-  img: ["img"]
+  img: ["img"],
+  reviews: ["reviews"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -230,9 +263,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   headline: "div";
   button: "button";
-  reviews: typeof Reviews;
   columns: "div";
   img: typeof p.PlasmicImg;
+  reviews: typeof Reviews;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -297,9 +330,9 @@ export const PlasmicArticleIntro = Object.assign(
   {
     // Helper components rendering sub-elements
     button: makeNodeComponent("button"),
-    reviews: makeNodeComponent("reviews"),
     columns: makeNodeComponent("columns"),
     img: makeNodeComponent("img"),
+    reviews: makeNodeComponent("reviews"),
 
     // Metadata about props expected for PlasmicArticleIntro
     internalVariantProps: PlasmicArticleIntro__VariantProps,

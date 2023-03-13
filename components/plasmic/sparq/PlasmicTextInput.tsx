@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import * as pp from "@plasmicapp/react-web";
 import {
@@ -69,7 +69,7 @@ export type PlasmicTextInput__ArgsType = {
   placeholder?: string;
   endIcon?: React.ReactNode;
   startIcon?: React.ReactNode;
-  value?: any;
+  value?: string;
   name?: string;
   required?: boolean;
   "aria-label"?: string;
@@ -96,7 +96,7 @@ export type PlasmicTextInput__OverridesType = {
 
 export interface DefaultTextInputProps extends pp.BaseTextInputProps {
   placeholder?: string;
-  value?: any;
+  value?: string;
   name?: string;
   required?: boolean;
   "aria-label"?: string;
@@ -112,6 +112,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicTextInput__RenderFunc(props: {
   variants: PlasmicTextInput__VariantsArgs;
   args: PlasmicTextInput__ArgsType;
@@ -120,6 +127,7 @@ function PlasmicTextInput__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -175,6 +183,14 @@ function PlasmicTextInput__RenderFunc(props: {
         initFunc: true
           ? ({ $props, $state, $queries, $ctx }) => $props.color
           : undefined
+      },
+      {
+        path: "value",
+        type: "writable",
+        variableType: "text",
+
+        valueProp: "value",
+        onChangeProp: "onChange"
       }
     ],
     [$props, $ctx]
